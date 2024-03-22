@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="instructions">
+    <h1>INSTRUÇÕES PARA USAR ESSA BRANCH</h1>
+    <h3>No site API-NINJAS</h3>
+    <ul>
+      <li><a href="https://api-ninjas.com/" target="_blank">Acesse o site API-NINJAS - https://api-ninjas.com</a></li>
+      <li>Caso não tenha se cadastrado clique em "Sign Up" <a href="https://api-ninjas.com/register/" target="_blank">ou
+          clique aqui</a></li>
+      <li>Depois de se cadastrar e fazer o Login:
+        <ul>
+          <li> Clique em "My Account" <a href="https://api-ninjas.com/profile" target="_blank"> ou aqui</a></li>
+          <li> Procure por API Key e clique no botão "Show API KEY"</li>
+          <li> Copie a API KEY vai ser algo nesse estilo: E04PvGN89wI1PdcdZNjZu/Qw==gBNl5v5l8vs0w2E04PvGN89w</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>Nessa Branch</h3>
+    <ul>
+      <li>Abra o arquivo config.json</li>
+      <li>Cole sua chave onde diz SUA_API_KEY_COPIADA_COLE_AQUI </li>
+      <li>Vai ficar assim: "API_KEY": "E04PvGN89wI1PdcdZNjZu/Qw==gBNl5v5l8vs0w2E04PvGN89w" </li>
+    </ul>
+    <h3>Criar o arquivo .gitignore</h3>
+    <ul>
+      <li>Dentro do .gitignore adicione apenas escreva config.json</li>
+      <li>Salve</li>
+      <li>Pronto a partir de agora o git não vai enviar mais o config.json que tem sua chave api</li>
+    </ul>
+
+    <h3>Se esta tudo ok clique em "Exercícios" logo abaixo que a api vai retornar todos os exercícios de alongamento da
+      API</h3>
+  </div>
+  <span id="json"></span>
+  <button onclick="getApiStreching()">Exercícios</button>
+  <script src="./assets/js/get-stretching.js"></script>
+</body>
+
+</html>
