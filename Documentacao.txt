@@ -1,0 +1,823 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------- DOCUMENTAÇÃO ------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+*********************************************************************************************************************************************
+**** BRANCH ESQUELETO ***********************************************************************************************************************
+*********************************************************************************************************************************************
+**** togglePomodoroConfig() *****************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-config.js
+NOME FUNÇÃO: 
+togglePomodoroConfig()
+O QUE FAZ: 
+Alterna um elemento html que tenha o id="conteudoOculto" entre visível(block) e oculto(none) mudando o 
+valor de display na classe CSS hidden-config.
+
+A FUNÇÂO:
+
+function togglePomodoroConfig() {
+  const hiddenDiv = document.getElementById('conteudoOculto');
+  hiddenDiv.classList.toggle('hidden-config');
+}
+
+Explicação passo a passo:
+
+-- Obtém o elemento HTML:
+A função usa document.getElementById('conteudoOculto') para recuperar o elemento HTML com o ID conteudoOculto.
+Se o elemento não for encontrado, a função retornará null.
+
+-- Alterna a classe:
+A função usa classList.toggle('hidden-config') para alternar a classe hidden-config no elemento HTML.
+Se o elemento já tiver a classe, ela será removida. Se não tiver, ela será adicionada.
+
+HTML:
+<button onclick="togglePomodoroConfig()">Configurações</button>
+
+<div id="conteudoOculto" class="hidden-config">
+  ... Conteúdo da configuração ...
+</div>
+
+CSS:
+
+.hidden-config {
+  display: none;
+}
+
+*********************************************************************************************************************************************
+**** função anônima) ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-config.js
+NOME FUNÇÃO: 
+função anônima que roda assim que a página é carregada
+O QUE FAZ: 
+Este código JavaScript verifica se as configurações do pomodoro estão salvas no localStorage se estivem 
+preenche os values do formulário de configuração e, caso contrário, exibe uma caixa de alerta e abre a 
+tela de configuração.
+
+A FUNÇÂO:
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const username = localStorage.getItem('username');
+  const pomodoroDuration = localStorage.getItem('pomodoroDuration');
+  const difficulty = localStorage.getItem('difficulty');
+
+
+  if (!username || !pomodoroDuration || !difficulty) {
+    togglePomodoroConfig();
+    alert(
+      'Por favor, infome as configurações do pomodoro conforme sua preferencia.'
+    );
+  } else {
+
+    document.getElementById('username').value = username;
+    document.getElementById('pomodoroDuration').value = pomodoroDuration;
+    document.getElementById('difficulty').value = difficulty;
+  }
+});
+
+Explicação passo a passo:
+
+-- Ativação na carga da página:
+document.addEventListener('DOMContentLoaded', function () {...}) ativa a função quando o documento HTML termina 
+de ser carregado e processado pelo navegador. Isso garante que todos os elementos HTML estejam disponíveis antes 
+da execução do código.
+
+-- Recuperação de configurações:
+O código usa localStorage.getItem('username'), localStorage.getItem('pomodoroDuration') e localStorage.getItem('difficulty') 
+para recuperar os valores salvos no localStorage com essas chaves.
+Se a chave não existir no localStorage, o método getItem retorna null.
+
+-- Verificação de configurações:
+O bloco if (!username || !pomodoroDuration || !difficulty) verifica se alguma das variáveis de configuração é null. Se for null, 
+significa que a configuração correspondente não está salva no localStorage.
+
+-- Exibição de alerta e abertura da configuração:
+--- Se alguma configuração estiver faltando, o código executa as seguintes ações:
+togglePomodoroConfig(): Chama a função descrita acima dessa para revelar o formulário de configurações do pomodoro.
+alert('Por favor, infome as configurações do pomodoro conforme sua preferencia.'): Exibe uma caixa de alerta solicitando que o 
+usuário configure o pomodoro.
+
+-- Preenchimento de campos:
+O bloco else {...} é executado somente se todas as configurações estiverem salvas no localStorage.
+O código usa document.getElementById('username').value = username para preencher o campo de input com ID username com o valor 
+recuperado do localStorage.
+As linhas seguintes fazem o mesmo para os campos pomodoroDuration e difficulty.
+
+
+*********************************************************************************************************************************************
+**** função anônima) ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-config.js
+NOME FUNÇÃO: 
+Salva as configurações do Pomodoro ao enviar formulário.
+O QUE FAZ: 
+Esta função JavaScript salva as configurações do pomodoro no localStorage quando o formulário de configuração é submetido.
+
+A FUNÇÂO:
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('configPomodoro');
+
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const pomodoroDuration = document.getElementById('pomodoroDuration').value;
+    const difficulty = document.getElementById('difficulty').value;
+
+    localStorage.setItem('username', username);
+    localStorage.setItem('pomodoroDuration', pomodoroDuration);
+    localStorage.setItem('difficulty', difficulty);
+
+    togglePomodoroConfig();
+  });
+});
+
+Explicação passo a passo:
+
+-- Ativação ao carregar o documento:
+document.addEventListener('DOMContentLoaded', function () {...}) ativa a função quando o documento HTML termina de ser carregado, 
+garantindo que todos os elementos estejam disponíveis.
+
+-- Obtenção do formulário:
+const form = document.getElementById('configPomodoro'); recupera o elemento de formulário com o ID configPomodoro.
+
+-- Ativação no envio do formulário:
+form.addEventListener('submit', function (event) {...}) ativa uma função quando o formulário é submetido.
+
+-- Impedir envio padrão:
+event.preventDefault(); impede o envio padrão do formulário, evitando a recarga da página e permitindo a execução do código JavaScript.
+
+-- Obtenção de valores dos campos:
+O código recupera os valores inseridos nos campos de input com os IDs username, pomodoroDuration e difficulty.
+
+-- Salva no localStorage:
+Os valores obtidos são salvos no localStorage usando localStorage.setItem() para manter as configurações entre sessões.
+
+-- Ocultação da tela de configuração:
+togglePomodoroConfig();  chama a função explicada anteriormente para ocultar a tela de configuração.
+
+
+*********************************************************************************************************************************************
+**** updateCountdownDisplay() ***************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-functions.js
+NOME FUNÇÃO: 
+updateCountdownDisplay()
+O QUE FAZ: 
+A função updateCountdownDisplay() atualiza a exibição do tempo restante do Pomodoro na interface do usuário
+no elemento de id="pomodoroCountdown".
+
+
+A FUNÇÂO:
+
+function updateCountdownDisplay() {
+  const minutes = Math.floor(timeLeftInSeconds / 60);
+  const seconds = timeLeftInSeconds % 60;
+  document.getElementById('pomodoroCountdown').textContent = `${String(
+    minutes
+  ).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+Explicação passo a passo:
+
+-- Cálculo de minutos e segundos:
+const minutes = Math.floor(timeLeftInSeconds / 60); calcula o número inteiro de minutos restantes dividindo o tempo restante em segundos por 60.
+const seconds = timeLeftInSeconds % 60; calcula os segundos restantes usando o operador módulo (%) do tempo restante em segundos dividido por 60.
+
+--Formatação da exibição:
+A função constrói uma string com o formato MM:SS para exibir os minutos (MM) e segundos (SS) restantes.
+String(minutes).padStart(2, '0') converte os minutos para string e adiciona zeros à esquerda para preencher 2 dígitos (ex: 5 se torna 05).
+String(seconds).padStart(2, '0') converte os segundos para string e adiciona zeros à esquerda para preencher 2 dígitos (ex: 9 se torna 09).
+O resultado da string formatada é atribuído ao textContent do elemento HTML com ID pomodoroCountdown.
+
+HTML:
+
+<div id="pomodoroCountdown">00:00</div>
+
+
+*********************************************************************************************************************************************
+**** startPomodoro() ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-functions.js
+NOME FUNÇÃO: 
+startPomodoro()
+O QUE FAZ: 
+A função startPomodoro() inicia o timer do Pomodoro, atualiza a exibição do tempo restante e quando
+termina o timer chama a função para exibir os alongamentos.
+
+
+A FUNÇÂO:
+
+let countdownInterval;
+let timeLeftInSeconds;
+
+function startPomodoro() {
+  const durationMinutes = localStorage.getItem('pomodoroDuration') || 25; 
+  timeLeftInSeconds = durationMinutes * 60;
+  updateCountdownDisplay();
+
+  countdownInterval = setInterval(() => {
+    timeLeftInSeconds -= 1;
+    updateCountdownDisplay();
+
+    if (timeLeftInSeconds <= 0) {
+      clearInterval(countdownInterval);
+      showStretching()
+        .then(() => {
+          console.log('Alongamento exibido.');
+        })
+        .catch((error) => {
+          console.error('Erro ao tentar exibir o alongamento: ', error);
+        });
+    }
+  }, 1000);
+}
+
+Explicação passo a passo:
+
+-- Variáveis globais:
+countdownInterval: Armazena o identificador do intervalo usado para atualizar o cronômetro.
+timeLeftInSeconds: Armazena o tempo restante do Pomodoro em segundos.
+
+-- Obtenção da duração:
+const durationMinutes = localStorage.getItem('pomodoroDuration') || 25; recupera a duração do Pomodoro do localStorage 
+(com chave pomodoroDuration) e converte para inteiro. Se a chave não existir, o valor padrão de 25 minutos é utilizado.
+
+
+-- Configuração do tempo restante:
+timeLeftInSeconds = durationMinutes * 60; converte a duração em minutos para segundos e armazena em timeLeftInSeconds.
+
+-- Atualização inicial da exibição:
+updateCountdownDisplay(); Usa a função explicada anteriormente para atualizar a exibição do tempo restante na interface do usuário.
+
+--Início do intervalo de atualização:
+countdownInterval = setInterval(() => {...}, 1000); inicia um intervalo que será executado a cada 1000 milissegundos (1 segundo). 
+A função dentro do setInterval é executada repetidamente até ser limpa.
+
+-- Atualização do tempo restante:
+--- Dentro da função do intervalo:
+timeLeftInSeconds -= 1; decrementa o tempo restante em 1 segundo.
+updateCountdownDisplay(); atualiza novamente a exibição do tempo restante(função explicada anteriormente).
+
+-- Verificação de término:
+if (timeLeftInSeconds <= 0) {...} verifica se o tempo restante é menor ou igual a zero (término do Pomodoro).
+clearInterval(countdownInterval); limpa o intervalo para interromper a atualização do cronômetro.
+
+-- Exibição de alongamento:
+showStretching() chama a função que exibe instruções de alongamento e imagem ao usuário após o término do Pomodoro.
+.then(() => {...}) é executada caso a função showStretching seja bem-sucedida.
+console.log('Alongamento exibido.'); registra uma mensagem no console indicando que o alongamento foi mostrado.
+.catch((error) => {...}) é executada caso a função showStretching apresente um erro.
+console.error('Erro ao tentar exibir o alongamento: ', error); registra uma mensagem de erro no console com detalhes do erro.
+
+HTML:
+
+<button onclick="startPomodoro()">Inciar</button>
+
+
+*********************************************************************************************************************************************
+**** pausePomodoro() ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-functions.js
+NOME FUNÇÃO: 
+pausePomodoro()
+O QUE FAZ: 
+Pausa o pomodoro.
+
+
+A FUNÇÂO:
+
+function pausePomodoro() {
+  clearInterval(countdownInterval);
+}
+
+Explicação passo a passo:
+
+-- Limpeza do intervalo:
+clearInterval(countdownInterval); limpa o intervalo usado para atualizar o cronômetro, interrompendo a 
+execução repetida da função dentro do setInterval da função startPomodoro().
+
+Observações:
+Esta usa a variável global countdownInterval que armazena o identificador do intervalo criado na função startPomodoro().
+
+HTML:
+
+<button onclick="pausePomodoro()">Pausar</button>
+
+
+*********************************************************************************************************************************************
+**** continuePomodoro() *********************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-functions.js
+NOME FUNÇÃO: 
+continuePomodoro()
+O QUE FAZ: 
+A função continuePomodoro() retoma a contagem do Pomodoro após uma pausa.
+
+
+A FUNÇÂO:
+
+function continuePomodoro() {
+  countdownInterval = setInterval(() => {
+    timeLeftInSeconds -= 1;
+    updateCountdownDisplay();
+
+    if (timeLeftInSeconds <= 0) {
+      clearInterval(countdownInterval);
+      showStretching()
+        .then(() => {
+          console.log('Alongamento exibido.');
+        })
+        .catch((error) => {
+          console.error('Erro ao tentar exibir o alongamento: ', error);
+        });
+    }
+  }, 1000);
+}
+
+Explicação passo a passo:
+
+-- Reinício do intervalo:
+countdownInterval = setInterval(() => {...}, 1000); cria um novo intervalo com a mesma função utilizada 
+na função startPomodoro() para atualizar o cronômetro a cada segundo.
+Atualização do tempo restante:
+
+-- Dentro da função do intervalo:
+timeLeftInSeconds -= 1; decrementa o tempo restante em 1 segundo.
+updateCountdownDisplay(); atualiza a exibição do tempo restante na interface do usuário(função explicada 
+anteriormente).
+
+-- Verificação de término:
+if (timeLeftInSeconds <= 0) {...} verifica se o tempo restante é menor ou igual a zero (término do Pomodoro).
+clearInterval(countdownInterval); limpa o intervalo para interromper a atualização do cronômetro.
+
+-- Exibição de alongamento:
+showStretching() chama a função que exibe instruções de alongamento e imagem ao usuário após o término do Pomodoro.
+.then(() => {...}) é executada caso a função showStretching seja bem-sucedida.
+console.log('Alongamento exibido.'); registra uma mensagem no console indicando que o alongamento foi mostrado.
+.catch((error) => {...}) é executada caso a função showStretching apresente um erro.
+console.error('Erro ao tentar exibir o alongamento: ', error); registra uma mensagem de erro no console com detalhes do erro.
+Observações:
+
+A variável global timeLeftInSeconds armazena o tempo restante do Pomodoro.
+
+HTML:
+
+<button onclick="continuePomodoro()">Continuar</button>
+
+
+*********************************************************************************************************************************************
+**** resetPomodoro() ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-functions.js
+NOME FUNÇÃO: 
+resetPomodoro()
+O QUE FAZ: 
+A função resetPomodoro() interrompe o Pomodoro em execução e reinicia o timer com a duração original
+
+
+A FUNÇÂO:
+
+function resetPomodoro() {
+  clearInterval(countdownInterval);
+  startPomodoro();
+}
+
+Explicação passo a passo:
+
+-- Limpeza do intervalo:
+clearInterval(countdownInterval); limpa o intervalo usado para atualizar o cronômetro, interrompendo a execução 
+repetida da função dentro do setInterval da função startPomodoro().
+
+-- Reinicialização do Pomodoro:
+startPomodoro(); chama a função startPomodoro() novamente. Isso reconfigura o tempo restante com base no valor 
+salvo no localStorage e reinicia o intervalo de atualização do cronômetro.
+
+
+Observações:
+Ao chamar startPomodoro(), o tempo restante é recuperado do localStorage, garantindo que o Pomodoro seja 
+reiniciado com a duração original configurada pelo usuário.
+
+HTML:
+
+<button onclick="resetPomodoro()">Reiniciar</button>
+
+
+
+*********************************************************************************************************************************************
+**** loadStretchings() **********************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-show-stretching.js
+NOME FUNÇÃO: 
+loadStretchings()
+O QUE FAZ: 
+A função loadStretchings() carrega os dados de alongamentos de um arquivo JSON de forma assíncrona.
+
+
+A FUNÇÂO:
+
+async function loadStretchings() {
+  const response = await fetch('./assets/json/stretching.json');
+  const stretchings = await response.json();
+  return stretchings;
+}
+
+Explicação passo a passo:
+
+-- Declaração assíncrona
+async function: declara a função como assíncrona, permitindo o uso de await para lidar com promessas(promisse).
+
+
+-- Carregamento do JSON:
+const response = await fetch('./assets/json/stretching.json');
+fetch('./assets/json/stretching.json'): recupera o conteúdo do arquivo JSON especificado pelo caminho relativo.
+await: aguarda a conclusão da operação fetch antes de prosseguir para a próxima linha. A execução da função fica 
+pausada até a resposta do servidor ser recebida.
+A variável response armazena o objeto de resposta da requisição fetch.
+
+-- Conversão para objeto JavaScript:
+const stretchings = await response.json();
+response.json(): converte o conteúdo do corpo da resposta (no formato JSON) em um objeto JavaScript.
+await: aguarda a conclusão da conversão do JSON antes de prosseguir para a próxima linha. A execução da função fica 
+pausada até a conversão ser finalizada.
+A variável stretchings armazena o objeto JavaScript contendo os dados de alongamentos carregados do arquivo JSON.
+
+-- Retorno dos dados:
+
+return stretchings;
+A função retorna o objeto JavaScript (stretchings) contendo os dados de alongamentos para ser utilizado em outras partes do código.
+
+*********************************************************************************************************************************************
+**** showStretching() ***********************************************************************************************************************
+*********************************************************************************************************************************************
+
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-show-stretching.js
+NOME FUNÇÃO: 
+showStretching()
+O QUE FAZ: 
+A função showStretching() exibe um alongamento aleatório na interface do usuário, filtrando por dificuldade e evitando repetições.
+/***** falta implementar a exibição de imagens e depois documentar ******/
+
+
+A FUNÇÂO:
+
+async function showStretching() {
+  const difficulty = localStorage.getItem('difficulty');
+  const stretchings = await loadStretchings();
+  const previousStretchings = JSON.parse(
+    localStorage.getItem('previousStretchings') || '[]'
+  );
+
+  const availableStretchings = stretchings.filter(
+    (stretching) =>
+      stretching.difficulty === difficulty &&
+      !previousStretchings.includes(stretching.id)
+  );
+
+  const stretchingToShow =
+    availableStretchings[
+      Math.floor(Math.random() * availableStretchings.length)
+    ];
+
+  if (stretchingToShow) {
+    document.getElementById('stretchingName').textContent =
+      'Nome:\n' + stretchingToShow.name;
+    document.getElementById('stretchingEquipment').textContent =
+      'Equipamento:\n' + stretchingToShow.equipment;
+    document.getElementById('stretchingMuscle').textContent =
+      'Músculo:\n' + stretchingToShow.muscle;
+    document.getElementById('stretchingInstructions').textContent =
+      'Instruções:\n' + stretchingToShow.instructions;
+    document.getElementById('stretchingText').style.display = 'block';
+    document.getElementById('stretchingImage').textContent =
+      'IMAGEM ALONGAMENTO'; // Atualize isso conforme necessário
+    document.getElementById('stretchingImage').style.display = 'block';
+
+    previousStretchings.push(stretchingToShow.id);
+    localStorage.setItem(
+      'previousStretchings',
+      JSON.stringify(previousStretchings)
+    );
+  }
+}
+
+Explicação passo a passo:
+
+-- Recuperar dados:
+const difficulty = localStorage.getItem('difficulty');: recupera a dificuldade selecionada pelo usuário do localStorage.
+const stretchings = await loadStretchings();: chama a função loadStretchings() para obter os dados de alongamentos do 
+arquivo JSON.
+const previousStretchings = JSON.parse(localStorage.getItem('previousStretchings') || '[]');: lê do localStorage os 
+IDs de alongamentos exibidos anteriormente.
+
+
+-- Filtrar alongamentos:
+const availableStretchings = stretchings.filter((stretching) => ...): filtra o array de alongamentos com base em:
+stretching.difficulty === difficulty: a dificuldade deve ser igual à selecionada pelo usuário.
+!previousStretchings.includes(stretching.id): o alongamento não deve ter sido exibido para o usuário.
+
+-- Selecionar alongamento aleatório:
+const stretchingToShow = availableStretchings[Math.floor(Math.random() * availableStretchings.length)];: escolhe um 
+elemento aleatório do array availableStretchings.
+
+
+-- Exibir alongamento:
+Verifica se um alongamento válido foi selecionado (if (stretchingToShow) {...})
+Atualiza o conteúdo de elementos HTML com dados como nome, equipamento, músculo, instruções e imagem do alongamento.
+
+-- Armazenar alongamento exibido:
+previousStretchings.push(stretchingToShow.id);: adiciona o ID do alongamento exibido ao array previousStretchings.
+localStorage.setItem('previousStretchings', JSON.stringify(previousStretchings));: atualiza o localStorage com a lista 
+de IDs de alongamentos exibidos.
+
+Observações:
+A função depende da função loadStretchings() para carregar os dados de alongamentos.
+O código para exibir a imagem do alongamento precisa ser modificado conforme a forma como as imagens são armazenadas 
+e exibidas no seu projeto.
+
+
+*********************************************************************************************************************************************
+**** stretchingDone() ***********************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+Esqueleto
+ARQUIVO: 
+assets/js/pomodoro-show-stretching.js
+NOME FUNÇÃO: 
+stretchingDone()
+O QUE FAZ: 
+A função stretchingDone() oculta a exibição do alongamento e registra o alongamento como realizado.
+
+
+A FUNÇÂO:
+
+function stretchingDone() {
+  document.getElementById('stretchingText').style.display = 'none';
+  document.getElementById('stretchingImage').style.display = 'none';
+  document.getElementById('stretchingName').textContent = '';
+  document.getElementById('stretchingEquipment').textContent = '';
+  document.getElementById('stretchingMuscle').textContent = '';
+  document.getElementById('stretchingInstructions').textContent = '';
+  const totalStretchingDone =
+    parseInt(localStorage.getItem('totalStretchingDone') || '0') + 1;
+  localStorage.setItem('totalStretchingDone', totalStretchingDone.toString());
+}
+
+Explicação passo a passo:
+
+-- Ocultar exibição:
+document.getElementById('stretchingText').style.display = 'none'; e document.getElementById('stretchingImage').style.display = 'none';: 
+oculta os elementos que exibem o texto e a imagem do alongamento.
+
+-- Limpar conteúdo:
+O código opcional limpa o conteúdo dos elementos HTML relacionados ao alongamento.
+
+-- Registrar alongamento realizado:
+const totalStretchingDone = parseInt(localStorage.getItem('totalStretchingDone') || '0') + 1;: recupera o número total de alongamentos 
+realizados do localStorage (chave totalStretchingDone), converte para inteiro, incrementa em 1 e armazena na variável totalStretchingDone.
+localStorage.setItem('totalStretchingDone', totalStretchingDone.toString());: atualiza o localStorage com o valor total de alongamentos 
+realizados.
+
+HTML:
+
+<button onclick="stretchingDone()">Alongamento Concluido</button>
+
+*********************************************************************************************************************************************
+**** BRANCH API *****************************************************************************************************************************
+*********************************************************************************************************************************************
+**** loadApiConfig() ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+api
+ARQUIVO: 
+assets/js/get-stretching.js
+NOME FUNÇÃO: 
+loadApiConfig()
+O QUE FAZ: 
+A função loadApiConfig() carrega a chave  API de um arquivo JSON (config.json)
+
+
+A FUNÇÂO:
+
+function loadApiConfig() {
+  return fetch('config.json')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Falha ao carregar a configuração');
+      }
+      return response.json();
+    })
+    .catch((error) => console.error('Erro ao carregar configuração:', error));
+}
+
+
+Explicação passo a passo:
+
+
+-- Função assíncrona:
+async function loadApiConfig() {...}: declara a função como assíncrona para lidar com operações assíncronas (fetch).
+
+-- Bloco try...catch
+then {...}: bloco para encapsular o código que pode gerar erros.
+catch (error) {...}: bloco para capturar e tratar erros lançados dentro do bloco then.
+
+-- Carregar dados do JSON:
+const response = await fetch('config.json');:
+fetch('config.json'): envia uma requisição para o arquivo JSON especificado.
+await: aguarda a conclusão da requisição fetch antes de prosseguir.
+if (!response.ok) { ... }: verifica o status da resposta. Se não for positivo (200-299), indica um erro.
+
+-- Processar dados de configuração:
+const config = await response.json();: converte o corpo da resposta JSON em um objeto JavaScript.
+
+-- Retorno de dados:
+return config;: a função pode retornar o objeto de configuração (config) para ser utilizado em outras partes do código.
+
+--Tratamento de erro:
+catch (error) {...}: caso ocorra um erro durante a requisição ou processamento do JSON, o erro é capturado e registrado no console.
+
+*********************************************************************************************************************************************
+**** getApiStreching() ************************************************************************************************************************
+*********************************************************************************************************************************************
+
+BRANCH: 
+api
+ARQUIVO: 
+assets/js/get-stretching.js
+NOME FUNÇÃO: 
+getApiStreching()
+O QUE FAZ: 
+A função getApiStretching() utiliza a API "API Ninjas" para carregar dados de alongamentos de forma assíncrona e exibi-los na interface 
+do usuário.
+
+VARIÁVEIS
+
+let difficulty = ['beginner', 'intermediate', 'expert'];
+let muscles = [
+  'abdominals', 'abductors', 'adductors', 'biceps', 'calves', 'chest', 'forearms', 
+  'glutes', 'hamstrings', 'lats', 'lower_back', 'middle_back','neck', 'quadriceps', 
+  'traps', 'triceps',
+];
+
+A FUNÇÂO:
+
+function getApiStreching() {
+  loadApiConfig().then((config) => {
+    let promises = [];
+
+    difficulty.forEach((dif) => {
+      muscles.forEach((muscle) => {
+        const url = `https://api.api-ninjas.com/v1/exercises?muscle=${muscle}&type=stretching&difficulty=${dif}`;
+        const promise = fetch(url, {
+          method: 'GET',
+          headers: {
+            'X-Api-Key': config.API_KEY,
+            'Content-Type': 'application/json',
+          },
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            return { muscle, dif, data }; 
+          });
+
+        promises.push(promise);
+      });
+    });
+
+    Promise.all(promises)
+      .then((results) => {
+        // Processa e exibe os resultados
+        const span = document.getElementById('json');
+        span.innerHTML = '';
+
+        results.forEach((result) => {
+          const content = document.createElement('pre'); // Usando 'pre' para formatar
+          content.textContent = `Muscle: ${result.muscle}, Difficulty: ${
+            result.dif
+          }, Data: ${JSON.stringify(result.data, null, 2)}`;
+          span.appendChild(content);
+        });
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        document.getElementById('json').textContent =
+          'Erro ao carregar exercícios.';
+      });
+  });
+}
+
+
+Explicação passo a passo:
+
+-- Carregar configuração da API:
+A função loadApiConfig() é chamada para obter a chave da API e outras configurações.
+
+-- Inicializar array de promessas:
+let promises = [];:
+Um array promises é criado para armazenar as promessas de todas as requisições à API.
+
+-- Itera por níveis de dificuldade e músculos:
+	difficulty.forEach((dif) => {
+      	muscles.forEach((muscle) => {
+Laços forEach iteram por difficulty e muscles para gerar requisições para cada combinação de dificuldade e músculo.
+
+
+-- Criar e enviar requisições à API:
+const url = `https://api.api-ninjas.com/v1/exercises?muscle=${muscle}&type=stretching&difficulty=${dif}`;
+        const promise = fetch(url, {
+          method: 'GET',
+          headers: {
+            'X-Api-Key': config.API_KEY,
+            'Content-Type': 'application/json',
+          },
+        })
+
+Para cada combinação, uma requisição é enviada à API "API Ninjas" usando fetch.
+A chave da API e o tipo de conteúdo são configurados nos headers da requisição.
+A chave API_KEY está no arquivo config.json que foi carregado pela função anterior loadApiConfig(), assim
+config.API_KEY é o valor da chave API que está no arquivo config.json
+
+-- Processar resposta da API:
+A resposta da API é verificada e se tudo certo convertida para JSON.
+.then((response) => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+
+-- O objeto JSON é retornado junto com informações de músculo e dificuldade.
+ .then((data) => {
+            return { muscle, dif, data };
+          });
+
+-- Armazenar promessas no array:
+promises.push(promise);: A promessa de cada requisição é adicionada ao array promises.
+
+-- Aguardar conclusão de todas as requisições:
+
+Promise.all(promises) é utilizado para esperar que todas as requisições sejam finalizadas.
+
+-- Exibir resultados:
+O conteúdo do elemento span com ID "json" é limpo.
+Para cada resultado, um elemento "pre" é criado e preenchido com o JSON formatado, incluindo informações de músculo, dificuldade e dados do alongamento.
+O elemento "pre" é adicionado ao elemento span que serve apenas para formatar melhor a resposta na tela.
+
+-- Tratar erros:
+Se um erro ocorrer durante qualquer etapa, ele é registrado no console e uma mensagem de erro é exibida no elemento json.
+
+
