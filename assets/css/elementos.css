@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*após usar https://coolors.co/  para gerar uma paleta de cores*/
+:root {
+  --richBlack: #101419;
+  --blueMunsell: #468C98;
+  --trueBlue: #476C9B;
+  --uranianBlue: #ADD9F4;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--blueMunsell);
+  display: flex;
+  align-items: center;
+
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 0 auto;
+}
+
+
+.container {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.color-black {
+  background-color: var(--richBlack);
+  color: var(--uranianBlue);
+}
+
+.color-blue {
+  background-color: var(--trueBlue);
+  color: var(--uranianBlue);
+}
+
+
+.color-light-blue {
+  background-color: var(--uranianBlue);
+  color: var(--richBlack);
+}
+
+
+.element-title {
+  font-family: 'Strait', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--uranianBlue);
+  background-color: var(--richBlack);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+}
+
+.element {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+}
+
+
+.hidden-config {
+  display: none;
+}
+
+.componenteAlongamento div,
+.imagemAlongamento {
+  white-space: pre-wrap;
+  /* Isso fará com que \n seja tratado como quebra de linha */
+}

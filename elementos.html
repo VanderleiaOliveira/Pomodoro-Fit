@@ -5,19 +5,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arquivo Básico Html</title>
+  <link rel="stylesheet" href="./assets/css/elementos.css">
 </head>
-<div class="container">
-  <h1 class="cronometro">00:00</h1>
-  <h2 class="componenteAlongamento">O Alongamento será Mostrado aqui</h2>
-  <button class="bnt-iniciar">Inciar</button>
-  <button class="bnt-pausar">Pausar</button>
-  <button class="btn-continuar">Continuar</button>
-  <button class="bnt-reset">Reset</button>
-  <button class="btn-concluido">Alongamento Concluido</button>
-</div>
 
 <body>
+  <section class="main-container">
+    <div class="container color-blue">
+      <div class="element-title">Cronômetro</div>
+      <div class="element">
+        <h1 class="cronometro" id="pomodoroCountdown">00:00</h1>
+      </div>
+    </div>
+    <div class="container color-light-blue">
+      <div class="element-title">Texto alongamento</div>
+      <div class="element">
+        <div class="componenteAlongamento" id="stretchingText">
+          <div id="stretchingName"></div>
+          <div id="stretchingEquipment"></div>
+          <div id="stretchingMuscle"></div>
+          <div id="stretchingInstructions"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container color-black">
+      <div class="element-title">Controles Pomodoro</div>
+      <div class="element">
+        <button class="bnt-iniciar" onclick="startPomodoro()">Inciar</button>
+        <button class="bnt-pausar" onclick="pausePomodoro()">Pausar</button>
+        <button class="btn-continuar" onclick="continuePomodoro()">Continuar</button>
+        <button class="bnt-reset" onclick="resetPomodoro()">Reset</button>
+      </div>
+    </div>
 
+    <div class="container color-blue">
+      <div class="element-title">Controle alongamento</div>
+      <div class="element">
+        <button class="btn-concluido" id="stretchingDone" onclick="stretchingDone()">Alongamento Concluido</button>
+      </div>
+    </div>
+    <div class="container color-light-blue">
+      <div class="element-title">Abrir configurações</div>
+      <div class="element">
+        <button class="btn" onclick="togglePomodoroConfig()">Configurações</button>
+      </div>
+    </div>
+    <div class="container color-light-blue">
+      <div class="element-title">Configurações Pomodoro</div>
+      <div class="element">
+        <div class="hidden-config" id="conteudoOculto">
+          <form id="configPomodoro">
+            <div>
+              <label for="username">Seu nome:</label>
+              <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+              <label for="pomodoroDuration">Duração pomodoro</label>
+              <input type="number" min="1" max="120" value="25" id="pomodoroDuration" name="pomodoroDuration" required>
+              minutos
+            </div>
+            <div>
+              <select id="difficulty" name="difficulty" required>
+                <option value="">Dificuldade dos alongamentos</option>
+                <option value="begginer">Iniciante</option>
+                <option value="intermediate">Intermediário</option>
+                <option value="expert">Avançado</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit">Salvar suas preferencias</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container color-black">
+      <div class="element-title">Imagem alongamento</div>
+      <div class="element">
+        <div class="imagemAlongamento" id="stretchingImage" style="color: #fff;"></div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="./assets/js/pomodoro-config.js"></script>
+  <script src="./assets/js/pomodoro-functions.js"></script>
+  <script src="./assets/js/pomodoro-show-stretching.js"></script>
 </body>
 
 </html>
