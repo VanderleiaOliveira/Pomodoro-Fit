@@ -268,5 +268,14 @@
     "equipment": "corpo",
     "difficulty": "advanced",
     "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
+  },
+  {
+    "id": 32,
+    "name": "Alongamento de coluna com rotação profunda",
+    "type": "alongamento",
+    "muscle": "coluna",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
   }
 ]
