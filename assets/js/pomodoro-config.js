@@ -3,34 +3,11 @@
 // ela altera a visibilidade do form de configuração do pomodoro
 // alternando (toogle) entre mostrar(block) e esconder(none) na classe .hidden-config
 // inicialmente .hidden-config está com display: none
-function togglePomodoroConfig() {
-  const hiddenDiv = document.getElementById('conteudoOculto');
-  hiddenDiv.classList.toggle('hidden-config');
-}
 
 // depois de carregar todo o DOM, essa função olha os valores do localStorage
 // se as configurações do pomodoro estiverem presentes, preenche os campos do
 //formulario de configuração do pomodoro, agora casos contrários, abre as configurações
 // e alerta o usuário para preencher as configurações
-document.addEventListener('DOMContentLoaded', function () {
-  // Verifica se os valores estão presentes no localStorage
-  const username = localStorage.getItem('username');
-  const pomodoroDuration = localStorage.getItem('pomodoroDuration');
-  const difficulty = localStorage.getItem('difficulty');
-
-  // Se algum valor estiver ausente, abre as configurações
-  if (!username || !pomodoroDuration || !difficulty) {
-    togglePomodoroConfig();
-    alert(
-      'Por favor, infome as configurações do pomodoro conforme sua preferencia.'
-    );
-  } else {
-    // Se os valores estiverem presentes, preenche os campos
-    document.getElementById('username').value = username;
-    document.getElementById('pomodoroDuration').value = pomodoroDuration;
-    document.getElementById('difficulty').value = difficulty;
-  }
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('configPomodoro');
