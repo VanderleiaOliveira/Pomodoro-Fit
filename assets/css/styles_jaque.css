@@ -69,3 +69,18 @@ button {
    width: 60px;
    font-size: 35px;
 }
+
+
+/* Class pra usar na troca de cor de fundo (beginner/intermediate/advanced) */
+
+.fundoVerde {
+   background-color: #15a05f; /*RGB: 21, 160, 95*/
+}
+
+.fundoAzul {
+   background-color: #454372; /*RGB: 69, 67, 114*/
+}
+
+.fundoVermelho {
+   background-color:  #b81414; /*RGB: 184, 20, 20*/
+}

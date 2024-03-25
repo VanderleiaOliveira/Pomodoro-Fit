@@ -1,25 +1,29 @@
-//Pomodoro - vermelho
-let fundoVermelho = document.querySelector('#pomodoro')
+let body = document.querySelector('#body')
+let button = document.getElementsByTagName('button')
 
-fundoVermelho.addEventListener('click', function () {
-    fundoVermelho.style.backgroundColor = "rgb(184, 20, 20)"
+//Beginner - verde
+Beginner.addEventListener('click', function () {
+    body.classList.toggle('fundoVerde')
+
+    for (let b = 0; b < button.length; b++) {
+        button[b].classList.toggle('fundoVerde')
+    }
 })
 
+// //Intermediate - azul
+Intermediate.addEventListener('click', function () {
+    body.classList.toggle('fundoAzul')
 
-//Intervalo Curto - verde
-let fundoVerde = document.querySelector('#intervaloCurto')
-
-fundoVerde.addEventListener('click', function () {
-    fundoVerde.style.backgroundColor = "rgb(21, 160, 95)"
+    for (let b = 0; b < button.length; b++) {
+        button[b].classList.toggle('fundoAzul')
+    }
 })
 
+// // //Advanced - vermelho
+Advanced.addEventListener('click', function () {
+    body.classList.toggle('fundoVermelho')
 
-//Intervalo Longo - azul
-let fundoAzul = document.querySelector('#intervaloLongo')
-
-fundoAzul.addEventListener('click', function () {
-    fundoAzul.style.backgroundColor = "rgb(69, 67, 114)"
+    for (let b = 0; b < button.length; b++) {
+        button[b].classList.toggle('fundoVermelho')
+    }
 })
-
-
-//////////////// NÃO ESTÃO FUNCIONANDO ////////////////
