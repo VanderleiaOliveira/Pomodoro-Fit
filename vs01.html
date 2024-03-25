@@ -10,20 +10,46 @@
 </head>
 
 <body>
-
-
-
-
-
-
   <!-- INICIO MODAL DE CONFIGURAÇÃO -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <form id="nomeForm">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name">
-        <button type="submit">Salvar</button>
-      </form>
+  <div id="modal" class="showModal">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-logo">logo fitPomodoro</div>
+        <div class="modal-form">
+          <form id="configPomodoro">
+            <div>
+              <input type="text" name="username" id="username" placeholder="Seu nome" required>
+            </div>
+            <div>
+              <label for="pomodoroDuration">Duração pomodoro</label>
+              <input type="number" min="1" max="120" value="25" id="pomodoroDuration" name="pomodoroDuration" required>
+              minutos
+            </div>
+            <div>
+              <label for="pomodoroPause">Duração pausa</label>
+              <input type="number" min="1" max="120" value="5" id="pomodoroPause" name="pomodoroPause" required>
+              minutos
+            </div>
+            <div>
+              <label for="pomodoroLongPause">Duração Intervalo Longo</label>
+              <input type="number" min="1" max="120" value="15" id="pomodoroLongPause" name="pomodoroLongPausen"
+                required>
+              minutos
+            </div>
+            <div>
+              <select id="difficulty" name="difficulty" required>
+                <option value="">Dificuldade dos alongamentos</option>
+                <option value="begginer">Iniciante</option>
+                <option value="intermediate">Intermediário</option>
+                <option value="expert">Avançado</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit">Salvar suas preferencias</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
   <!-- FIM MODAL DE CONFIGURAÇÃO -->
