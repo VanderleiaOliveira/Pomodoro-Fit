@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Prata&display=swap');
 
 
 * {
@@ -9,16 +9,16 @@
 
 /*após usar https://coolors.co/  para gerar uma paleta de cores*/
 :root {
-  --delftBlue: #101419;
+  --blackJack: #101419;
+  --bone: #ece3d5;
+  --cornellRed: #b81414;
   --delftBlue: #454372;
-  --cornellRed: #B81414;
-  --bone: #E5D9C7;
+  --shamrockGreen: #15a05f;
 }
 
 html,
 body {
   height: 100%;
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
