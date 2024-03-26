@@ -1,5 +1,3 @@
-let button = document.getElementsByTagName('button');
-
 document.addEventListener('DOMContentLoaded', function () {
   const username = localStorage.getItem('username');
   const pomodoroDuration = localStorage.getItem('pomodoroDuration');
@@ -23,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // exibe o modal de configurações
 function modalPomodoroConfig() {
-  const hiddenDiv = document.getElementById('modal');
-  hiddenDiv.classList.toggle('showModal');
+  const modalBg = document.getElementById('modal'); // Seleciona o fundo do modal pelo ID
+  modalBg.classList.toggle('showModal'); // Alterna a visibilidade do modal
 }
 
 // pega os valores da configuração e salva no localStorage
