@@ -75,12 +75,16 @@ body {
 }
 
 .logo {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  width: 350px;
 }
 
 .pomodoro {
-  width: 600px;
-  height: 400px;
+  width: 450px;
+  height: 350px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 3px 3px 2.6px rgba(0, 0, 0, 0.15);
@@ -94,7 +98,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-bottom: 15px;
 }
 
 #pomodoroCountdown {
@@ -105,7 +109,7 @@ body {
 }
 
 .pomodoro-controls {
-  padding-top: 50px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;

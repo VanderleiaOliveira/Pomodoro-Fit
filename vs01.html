@@ -18,10 +18,11 @@
         <div class="pomodoro-timer" id="pomodoroCountdown">25:00</div>
         <div class="pomodoro-controls">
 
-          <a href="#" class="pomodoro-buttons change-background fundoVerde" onclick="startPomodoro()">
-            <i class="fa-solid fa-play icone"></i>
+          <a href="#" class="pomodoro-buttons change-background fundoVerde" id="playPause"
+            onclick="togglePomodoro(event);">
+            <i class="fa-solid fa-play icone" id="playPauseIcon"></i>
           </a>
-          <a href="#" class="pomodoro-buttons change-background fundoVerde" onclick="reload">
+          <a href="#" class="pomodoro-buttons change-background fundoVerde" onclick="startPomodoro()">
             <i class="fa-solid fa-rotate icone"></i>
           </a>
 
@@ -29,7 +30,7 @@
       </div>
       <div class="menu">
         <div class="menu-btn">
-          <a href="#" class="btn change-background  fundoVerde" onclick="modalPomodoroConfig()" id="config">
+          <a href="#" class="btn change-background  fundoVerde" onclick="showModal()" id="config">
             <i class="fa-solid fa-gear icon" title="Configurações"></i>
           </a>
         </div>
@@ -93,6 +94,29 @@
     </div>
   </div>
   <!-- FIM MODAL DE CONFIGURAÇÃO -->
+
+  <!-- INICIO MODAL DE ALONGAMENTO -->
+  <div id="modal-stretching" class="showModal change-background fundoVerde">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-logo"><img src="/assets/img/logo.png" alt="logo"></div>
+        <div class="modal-stretching-content">
+          <div class="modal-image-stretching" id="stretchingImage"><img src="/assets/img/alongamentos/iniciante.png"
+              width="350px">
+          </div>
+          <div class="modal-countDown-stretching" id="stretchingCount"> 05:00</div>
+          <div class="modal-text-stretching" id="stretchingText">
+            <div id="stretchingName"></div>
+            <div id="stretchingEquipment"></div>
+            <div id="stretchingMuscle"></div>
+            <div id="stretchingInstructions"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL DE Alongamento -->
   <script type="text/javascript" src="./assets/js/vs01.js"></script>
 </body>
 
