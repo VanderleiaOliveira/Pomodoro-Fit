@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       parseInt(localStorage.getItem('pomodoroDuration')) || 25;
     timeLeftInSeconds = durationMinutes * 60; // Configura o tempo inicial
 
-    updateCountdownDisplay(); // Atualiza o display pela primeira vez
+    updateTimerDisplay(); // Atualiza o display pela primeira vez
   }
 
   // area de salva na localStorage as configurações do pomodoro e o nome do usário
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chama a função para ocultar o modal de configurações do Pomodoro
     hideModal();
     changeBackgroundByDifficulty();
+    //updateTimerDisplay();
   });
 });
 
@@ -175,8 +176,27 @@ function pausePomodoro() {
 }
 
 function resetPomodoro() {
-  clearInterval(countdownInterval);
-  startPomodoro();
+  // Limpa o intervalo de contagem regressiva existente, se houver
+  if (countdownInterval) {
+    clearInterval(countdownInterval);
+    countdownInterval = null;
+  }
+  // Reseta o estado de execução do Pomodoro isso precisa lá para os botões de play/pause e o startPomodoro funcionar corretamente
+  isPomodoroRunning = false;
+
+  // Define `timeLeftInSeconds` para a duração padrão do Pomodoro ou uma customizada pelo usuário
+  const durationMinutes =
+    parseInt(localStorage.getItem('pomodoroDuration')) || 25;
+  timeLeftInSeconds = durationMinutes * 60;
+
+  // Atualiza o display do contador para refletir o tempo resetado
+  updateCountdownDisplay();
+
+  // Atualiza o ícone do botão play/pause para "play" pq provavelmente o botão vai estar exibindo pause
+  const playPauseIcon = document.getElementById('playPauseIcon');
+  if (playPauseIcon.classList.contains('fa-pause')) {
+    playPauseIcon.classList.replace('fa-pause', 'fa-play');
+  }
 }
 
 function updateCountdownDisplay() {
@@ -243,7 +263,7 @@ async function showStretching() {
     }
 
     // Atualiza o elemento de imagem com a URL correta
-    const imageElement = document.getElementById('stretchingImg');
+    const imageElement = document.getElementById('stretchingImage');
     imageElement.innerHTML = `<img src="${imageUrl}" width="350px">`;
 
     // Salva o ID do alongamento mostrado para não repetir
