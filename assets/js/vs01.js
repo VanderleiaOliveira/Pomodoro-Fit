@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chama a função para ocultar o modal de configurações do Pomodoro
     hideModal();
     changeBackgroundByDifficulty();
+    updateTimerDisplay();
   });
 });
 
@@ -243,7 +244,7 @@ async function showStretching() {
     }
 
     // Atualiza o elemento de imagem com a URL correta
-    const imageElement = document.getElementById('stretchingImage');
+    const imageElement = document.getElementById('stretchingImg');
     imageElement.innerHTML = `<img src="${imageUrl}" width="350px">`;
 
     // Salva o ID do alongamento mostrado para não repetir
