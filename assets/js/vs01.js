@@ -1,3 +1,5 @@
+let button = document.getElementsByTagName('button');
+
 document.addEventListener('DOMContentLoaded', function () {
   const username = localStorage.getItem('username');
   const pomodoroDuration = localStorage.getItem('pomodoroDuration');
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('pomodoroPause').value = pomodoroPause;
     document.getElementById('pomodoroLongPause').value = pomodoroLongPause;
     document.getElementById('difficulty').value = difficulty;
+    changeBackgroundByDifficulty();
   }
 });
 
@@ -50,8 +53,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Chama a função para ocultar o modal de configurações do Pomodoro
     modalPomodoroConfig();
+    changeBackgroundByDifficulty();
   });
 });
+function changeBackgroundByDifficulty() {
+  let difficulty = localStorage.getItem('difficulty');
+  console.log(difficulty);
+  let elementsToChange = document.querySelectorAll('.change-background');
+  let backgroundClass = '';
+
+  switch (difficulty) {
+    case 'begginer':
+      backgroundClass = 'fundoVerde';
+      break;
+    case 'intermediate':
+      backgroundClass = 'fundoAzul';
+      break;
+    case 'expert':
+      backgroundClass = 'fundoVermelho';
+      break;
+  }
+
+  elementsToChange.forEach((element) => {
+    element.classList.remove('fundoVerde', 'fundoAzul', 'fundoVermelho');
+    element.classList.add(backgroundClass);
+  });
+}
 
 // TESTE
 // para ver se as informacoes foram salvas corretamente ou existem no localStorage:
@@ -63,3 +90,65 @@ console.log(
   localStorage.getItem('pomodoroLongPause')
 );
 console.log('Difficulty: ', localStorage.getItem('difficulty'));
+
+let countdownInterval;
+let timeLeftInSeconds;
+
+function startPomodoro() {
+  const durationMinutes = localStorage.getItem('pomodoroDuration') || 25; // Fallback para 25 minutos
+  timeLeftInSeconds = durationMinutes * 60;
+  updateCountdownDisplay();
+
+  countdownInterval = setInterval(() => {
+    timeLeftInSeconds -= 1;
+    updateCountdownDisplay();
+
+    if (timeLeftInSeconds <= 0) {
+      clearInterval(countdownInterval);
+      // Chama a função para exibir um alongamento ao final do Pomodoro
+      showStretching()
+        .then(() => {
+          console.log('Alongamento exibido.');
+        })
+        .catch((error) => {
+          console.error('Erro ao tentar exibir o alongamento: ', error);
+        });
+    }
+  }, 1000);
+}
+
+function pausePomodoro() {
+  clearInterval(countdownInterval);
+}
+
+function continuePomodoro() {
+  countdownInterval = setInterval(() => {
+    timeLeftInSeconds -= 1;
+    updateCountdownDisplay();
+
+    if (timeLeftInSeconds <= 0) {
+      clearInterval(countdownInterval);
+      // Chama a função para exibir um alongamento ao final do Pomodoro
+      showStretching()
+        .then(() => {
+          console.log('Alongamento exibido.');
+        })
+        .catch((error) => {
+          console.error('Erro ao tentar exibir o alongamento: ', error);
+        });
+    }
+  }, 1000);
+}
+
+function resetPomodoro() {
+  clearInterval(countdownInterval);
+  startPomodoro();
+}
+
+function updateCountdownDisplay() {
+  const minutes = Math.floor(timeLeftInSeconds / 60);
+  const seconds = timeLeftInSeconds % 60;
+  document.getElementById('pomodoroCountdown').textContent = `${String(
+    minutes
+  ).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}

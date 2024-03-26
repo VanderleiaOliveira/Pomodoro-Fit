@@ -9,12 +9,52 @@
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
 </head>
 
-<body>
+<body id="body-bg" class="change-background fundoVermelho">
+  <div class="container-center">
+    <div class="logo"><img src="/assets/img/logo.png" alt="logo"></div>
+
+    <div class="container">
+      <div class="pomodoro">
+        <div class="pomodoro-timer" id="pomodoroCountdown">25:00</div>
+        <div class="pomodoro-controls">
+
+          <a href="#" class="pomodoro-buttons change-background fundoVerde" onclick="startPomodoro()">
+            <i class="fa-solid fa-play icone"></i>
+          </a>
+          <a href="#" class="pomodoro-buttons change-background fundoVerde" onclick="reload">
+            <i class="fa-solid fa-rotate icone"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menu-btn">
+          <a href="#" class="btn change-background  fundoVerde" onclick="modalPomodoroConfig()" id="config">
+            <i class="fa-solid fa-gear icon" title="Configurações"></i>
+          </a>
+        </div>
+        <div class="menu-btn"><a href="#" class="btn change-background  fundoVerde" id="level"><span
+              class="level">32</span></a></div>
+        <div class="menu-btn">
+          <a href="#" class="btn change-background fundoVerde" id="about">
+            <i class="fas fa-question icon" title="Sobre o pomodoro"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
   <!-- INICIO MODAL DE CONFIGURAÇÃO -->
-  <div id="modal" class="showModal">
-    <div class="modal">
+  <div id="modal" class="showModal ">
+    <div class="modal change-background fundoVermelho">
       <div class="modal-content">
-        <div class="modal-logo">logo fitPomodoro</div>
+        <div class="modal-logo"><img src="/assets/img/logo.png" alt="logo"></div>
         <div class="modal-form">
           <form id="configPomodoro">
             <div>
@@ -32,7 +72,7 @@
             </div>
             <div>
               <label for="pomodoroLongPause">Duração Intervalo Longo</label>
-              <input type="number" min="1" max="120" value="15" id="pomodoroLongPause" name="pomodoroLongPausen"
+              <input type="number" min="1" max="120" value="15" id="pomodoroLongPause" name="pomodoroLongPause"
                 required>
               minutos
             </div>
