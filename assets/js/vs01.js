@@ -43,13 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('pomodoroLongPause').value = pomodoroLongPause;
     document.getElementById('difficulty').value = difficulty;
 
-    updateTimerDisplay();
     changeBackgroundByDifficulty();
     const durationMinutes =
       parseInt(localStorage.getItem('pomodoroDuration')) || 25;
-    timeLeftInSeconds = durationMinutes * 60; // Configura o tempo inicial
-
-    updateTimerDisplay(); // Atualiza o display pela primeira vez
+    timeLeftInSeconds = durationMinutes * 60;
+    updateCountdownDisplay(); // Atualiza o display pela primeira vez
   }
 
   // area de salva na localStorage as configurações do pomodoro e o nome do usário
@@ -78,17 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chama a função para ocultar o modal de configurações do Pomodoro
     hideModal();
     changeBackgroundByDifficulty();
-    //updateTimerDisplay();
+    const durationMinutes =
+      parseInt(localStorage.getItem('pomodoroDuration')) || 25;
+    timeLeftInSeconds = durationMinutes * 60;
+    updateCountdownDisplay();
   });
 });
-
-// exibe o valor do tempo do pomodoro armazenado na localStorage no contador
-function updateTimerDisplay() {
-  const durationMinutes = localStorage.getItem('pomodoroDuration') || 25;
-  document.getElementById(
-    'pomodoroCountdown'
-  ).textContent = `${durationMinutes}:00`;
-}
 
 // muda a cor do fundo e dos botões conforme a dificuldade escolhida pelo usuário
 function changeBackgroundByDifficulty() {
