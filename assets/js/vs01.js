@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chama a função para ocultar o modal de configurações do Pomodoro
     hideModal();
     changeBackgroundByDifficulty();
-    updateTimerDisplay();
   });
 });
 
