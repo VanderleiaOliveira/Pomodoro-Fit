@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fitPomodoro</title>
+  <link rel="stylesheet" href="/assets/css/modal-config.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+</head>
+
+<body id="body-bg" class="change-background fundoVermelho">
+  <div class="container-center">
+    <!-- INICIO MODAL DE CONFIGURAÇÃO -->
+    <div id="modal" class="showModal change-background fundoVerde">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-logo"><img src="/assets/img/logo.png" alt="logo"></div>
+          <div class="modal-form">
+            <form id="configPomodoro">
+              <div>
+                <h3>Personalize de acordo com suas preferências.</h3>
+                <input type="text" name="username" id="username" placeholder="Seu nome" autocolplete="none" required>
+              </div>
+              <div>
+                <label for="pomodoroDuration">Duração do pomodoro:</label>
+                <input type="number" min="1" max="120" value="25" id="pomodoroDuration" class="inputTime" name="pomodoroDuration"
+                  required><label>min</label>
+              </div>
+              <div>
+                <label for="pomodoroPause">Duração da pausa curta:</label>
+                <input type="number" min="1" max="120" value="5" id="pomodoroPause" class="inputTime" name="pomodoroPause" required><label>min</label>
+              </div>
+              <div>
+                <label for="pomodoroLongPause">Duração da pausa longa:</label>
+                <input type="number" min="1" max="120" value="15" id="pomodoroLongPause" class="inputTime" name="pomodoroLongPause"
+                  required><label>min</label>
+                
+              </div>
+              <div>
+                <select id="difficulty" name="difficulty" required>
+                  <option value="">Dificuldade dos alongamentos</option>
+                  <option value="begginer">Iniciante</option>
+                  <option value="intermediate">Intermediário</option>
+                  <option value="expert">Avançado</option>
+                </select>
+              </div>
+              <div>
+                <button id="btn-save" type="submit">SALVAR</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM MODAL DE CONFIGURAÇÃO -->
+</body>
+
+</html>
