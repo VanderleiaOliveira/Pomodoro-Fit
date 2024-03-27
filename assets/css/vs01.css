@@ -132,7 +132,7 @@ label,
   font-family: poppins;
   font-weight: 600;
   font-size: 14px;
-  color: var(--defaultBg);
+
   background-color: var(--bone);
   border-radius: 5px;
   border: none;
@@ -142,6 +142,12 @@ label,
 /*fim alteraçõe Jaque*/
 form {
   color: var(--bone);
+}
+
+.timeItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*CSS relativo a interface*/
@@ -270,16 +276,31 @@ form {
 /* Class pra usar na troca de cor de fundo (beginner/intermediate/advanced) */
 
 .fundoVerde {
-  background-color: #15a05f;
+  background-color: var(--shamrockGreen);
   /*RGB: 21, 160, 95*/
 }
 
 .fundoAzul {
-  background-color: #454372;
+  background-color: var(--delftBlue);
   /*RGB: 69, 67, 114*/
 }
 
 .fundoVermelho {
-  background-color: #b81414;
+  background-color: var(--cornellRed);
+  /*RGB: 184, 20, 20*/
+}
+
+.textoVerde {
+  color: var(--shamrockGreen);
+  /*RGB: 21, 160, 95*/
+}
+
+.textoAzul {
+  color: var(--delftBlue);
+  /*RGB: 69, 67, 114*/
+}
+
+.textoVermelho {
+  color: var(--cornellRed);
   /*RGB: 184, 20, 20*/
 }

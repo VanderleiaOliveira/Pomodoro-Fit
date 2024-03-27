@@ -12,6 +12,7 @@ function hideModal() {
 function showStretchingModal() {
   const modalStretchingBg = document.getElementById('modal-stretching');
   modalStretchingBg.classList.add('showModal');
+  changeTextColorByDifficultyInConfigButton();
 }
 
 function hideStretchingModal() {
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('difficulty').value = difficulty;
 
     changeBackgroundByDifficulty();
+    updateLevelProgress();
     const durationMinutes =
       parseInt(localStorage.getItem('pomodoroDuration')) || 25;
     timeLeftInSeconds = durationMinutes * 60;
@@ -76,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chama a função para ocultar o modal de configurações do Pomodoro
     hideModal();
     changeBackgroundByDifficulty();
+    changeTextColorByDifficultyInConfigButton();
     const durationMinutes =
       parseInt(localStorage.getItem('pomodoroDuration')) || 25;
     timeLeftInSeconds = durationMinutes * 60;
@@ -108,6 +111,33 @@ function changeBackgroundByDifficulty() {
   elementsToChange.forEach((element) => {
     element.classList.remove('fundoVerde', 'fundoAzul', 'fundoVermelho');
     element.classList.add(backgroundClass);
+  });
+}
+
+function changeTextColorByDifficultyInConfigButton() {
+  let difficulty = localStorage.getItem('difficulty');
+  console.log(difficulty);
+  // Seleciona os elementos que terão a cor do texto alterada
+  let elementsToChangeTextColor =
+    document.querySelectorAll('.change-text-color');
+  let textColorClass = '';
+
+  switch (difficulty) {
+    case 'begginer':
+      textColorClass = 'textoVerde';
+      break;
+    case 'intermediate':
+      textColorClass = 'textoAzul';
+      break;
+    case 'expert':
+      textColorClass = 'textoVermelho';
+      break;
+  }
+
+  // Itera sobre os elementos selecionados e atualiza a classe de cor do texto
+  elementsToChangeTextColor.forEach((element) => {
+    element.classList.remove('textoVerde', 'textoAzul', 'textoVermelho');
+    element.classList.add(textColorClass);
   });
 }
 
@@ -282,4 +312,39 @@ function stretchingDone() {
   const totalStretchingDone =
     parseInt(localStorage.getItem('totalStretchingDone') || '0') + 1;
   localStorage.setItem('totalStretchingDone', totalStretchingDone.toString());
+}
+
+// parte da gamificação do pomodoro:
+
+async function updateLevelProgress() {
+  const username = localStorage.getItem('username'); // Obtém o nome do usuário do localStorage
+  const difficulty = localStorage.getItem('difficulty');
+  const stretchings = await loadStretchings(); // Assumindo que essa função retorna todos os alongamentos disponíveis
+  const previousStretchings = JSON.parse(
+    localStorage.getItem('previousStretchings') || '[]'
+  );
+
+  const totalForDifficulty = stretchings.filter(
+    (stretch) => stretch.difficulty === difficulty
+  ).length;
+  const remaining = totalForDifficulty - previousStretchings.length;
+
+  // Atualiza o texto do link com o número de alongamentos restantes
+  document.getElementById('level').innerText = `${remaining}`;
+
+  // Atualiza o atributo title do link
+  const levelLink = document.getElementById('level');
+  if (username) {
+    // Verifica se o nome do usuário existe antes de tentar usar
+    levelLink.setAttribute(
+      'title',
+      `${username}, você ainda tem ${remaining} alongamentos para concluir este nível`
+    );
+  } else {
+    // Caso o nome do usuário não esteja disponível, pode definir um texto padrão
+    levelLink.setAttribute(
+      'title',
+      `Você ainda tem ${remaining} alongamentos para concluir este nível`
+    );
+  }
 }

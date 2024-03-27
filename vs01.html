@@ -35,8 +35,8 @@
             <i class="fa-solid fa-gear icon" title="Configurações"></i>
           </a>
         </div>
-        <div class="menu-btn"><a href="#" class="btn change-background  fundoVerde" id="level"><span
-              class="level">32</span></a></div>
+        <div class="menu-btn"><a href="#" class="btn change-background level fundoVerde" id="level"
+            title="username você ainda tem X alongamentos para concluir este nível">32</a></div>
         <div class="menu-btn">
           <a href="#" class="btn change-background fundoVerde" id="about">
             <i class="fas fa-question icon" title="Sobre o pomodoro"></i>
@@ -53,7 +53,7 @@
 
 
   <!-- INICIO MODAL DE CONFIGURAÇÃO -->
-  <div id="modal" class="showModal change-background fundoVerde">
+  <div id="modal" class="showModal change-background fundoVermelho">
     <div class="modal">
       <div class="modal-content">
         <div class="modal-logo"><img src="/assets/img/logo.png" alt="logo"></div>
@@ -62,26 +62,27 @@
             <div>
               <h3>Personalize de acordo com suas preferências.</h3>
               <input type="text" name="username" id="username" placeholder="Seu nome" autocolplete="none"
-                class="change-background" required>
+                class="change-background fundoVermelho" required>
             </div>
-            <div>
+            <div class="timeItem">
               <label for="pomodoroDuration">Duração do pomodoro:</label>
               <input type="number" min="1" max="120" value="25" id="pomodoroDuration"
-                class="inputTime change-background" name="pomodoroDuration" required><label>min</label>
+                class="inputTime change-background fundoVermelho" name="pomodoroDuration" required
+                style="margin-left: 18px;"><label>min</label>
             </div>
-            <div>
+            <div class="timeItem">
               <label for="pomodoroPause">Duração da pausa curta:</label>
-              <input type="number" min="1" max="120" value="5" id="pomodoroPause" class="inputTime change-background"
-                name="pomodoroPause" required><label>min</label>
+              <input type="number" min="1" max="120" value="5" id="pomodoroPause"
+                class="inputTime change-background fundoVermelho" name="pomodoroPause" required><label>min</label>
             </div>
-            <div>
+            <div class="timeItem">
               <label for="pomodoroLongPause">Duração da pausa longa:</label>
               <input type="number" min="1" max="120" value="15" id="pomodoroLongPause"
-                class="inputTime change-background" name="pomodoroLongPause" required><label>min</label>
+                class="inputTime change-background fundoVermelho" name="pomodoroLongPause" required><label>min</label>
 
             </div>
             <div>
-              <select id="difficulty" name="difficulty" class="change-background" required>
+              <select id="difficulty" name="difficulty" class="change-background fundoVermelho" required>
                 <option value="">Dificuldade dos alongamentos</option>
                 <option value="begginer">Iniciante</option>
                 <option value="intermediate">Intermediário</option>
@@ -89,7 +90,7 @@
               </select>
             </div>
             <div>
-              <button id="btn-save" type="submit">SALVAR</button>
+              <button id="btn-save" class="change-text-color textoVermelho" type="submit">SALVAR</button>
             </div>
           </form>
         </div>
