@@ -59,26 +59,28 @@
         <div class="modal-form">
           <form id="configPomodoro">
             <div>
-              <input type="text" name="username" id="username" placeholder="Seu nome" required>
+              <h3>Personalize de acordo com suas preferências.</h3>
+              <input type="text" name="username" id="username" placeholder="Seu nome" autocolplete="none"
+                class="change-background" required>
             </div>
             <div>
-              <label for="pomodoroDuration">Duração pomodoro</label>
-              <input type="number" min="1" max="120" value="25" id="pomodoroDuration" name="pomodoroDuration" required>
-              minutos
+              <label for="pomodoroDuration">Duração do pomodoro:</label>
+              <input type="number" min="1" max="120" value="25" id="pomodoroDuration"
+                class="inputTime change-background" name="pomodoroDuration" required><label>min</label>
             </div>
             <div>
-              <label for="pomodoroPause">Duração pausa</label>
-              <input type="number" min="1" max="120" value="5" id="pomodoroPause" name="pomodoroPause" required>
-              minutos
+              <label for="pomodoroPause">Duração da pausa curta:</label>
+              <input type="number" min="1" max="120" value="5" id="pomodoroPause" class="inputTime change-background"
+                name="pomodoroPause" required><label>min</label>
             </div>
             <div>
-              <label for="pomodoroLongPause">Duração Intervalo Longo</label>
-              <input type="number" min="1" max="120" value="15" id="pomodoroLongPause" name="pomodoroLongPause"
-                required>
-              minutos
+              <label for="pomodoroLongPause">Duração da pausa longa:</label>
+              <input type="number" min="1" max="120" value="15" id="pomodoroLongPause"
+                class="inputTime change-background" name="pomodoroLongPause" required><label>min</label>
+
             </div>
             <div>
-              <select id="difficulty" name="difficulty" required>
+              <select id="difficulty" name="difficulty" class="change-background" required>
                 <option value="">Dificuldade dos alongamentos</option>
                 <option value="begginer">Iniciante</option>
                 <option value="intermediate">Intermediário</option>
@@ -86,7 +88,7 @@
               </select>
             </div>
             <div>
-              <button type="submit">Salvar suas preferencias</button>
+              <button id="btn-save" type="submit">SALVAR</button>
             </div>
           </form>
         </div>

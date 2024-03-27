@@ -53,12 +53,95 @@ body {
   z-index: 1001;
 }
 
-.modal-content {
+/* .modal-content {
   padding: 20px;
   border-radius: 5px;
   max-width: 500px;
   margin: auto;
   z-index: 1002;
+} */
+
+
+/*alterações Jaque*/
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  max-width: 500px;
+  z-index: 1002;
+}
+
+h3 {
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--bone);
+  margin-bottom: 12px;
+}
+
+#username,
+#difficulty {
+  height: 35px;
+  width: 283px;
+  padding: 5px;
+  font-family: poppins;
+  font-size: 15px;
+  color: var(--bone);
+  border-color: var(--bone);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: var(--shadonBone);
+}
+
+label,
+#difficulty {
+  color: var(--shadonBone);
+  font-family: poppins;
+  font-size: 15px;
+}
+
+.inputTime {
+  text-align: right;
+  height: 35px;
+  width: 45px;
+  margin: 5px;
+  color: var(--shadonBone);
+  border-style: solid;
+  outline: none;
+  border-color: var(--bone);
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 16px;
+  font-family: poppins;
+}
+
+#btn-save {
+  height: 35px;
+  width: 100px;
+  padding: 5px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--defaultBg);
+  background-color: var(--bone);
+  border-radius: 5px;
+  border: none;
+  margin-top: 25px;
+}
+
+/*fim alteraçõe Jaque*/
+form {
+  color: var(--bone);
 }
 
 /*CSS relativo a interface*/
@@ -68,6 +151,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 
 .container {
   display: flex;
