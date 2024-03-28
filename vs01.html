@@ -84,7 +84,7 @@
             <div>
               <select id="difficulty" name="difficulty" class="change-background fundoVermelho" required>
                 <option value="">Dificuldade dos alongamentos</option>
-                <option value="begginer">Iniciante</option>
+                <option value="beginner">Iniciante</option>
                 <option value="intermediate">Intermediário</option>
                 <option value="expert">Avançado</option>
               </select>
@@ -107,14 +107,17 @@
         <div class="modal-stretching-content">
           <div class="modal-image-stretching" id="stretchingImage">
           </div>
-          <div class="modal-countDown-stretching" id="stretchingCount"> 05:00</div>
+          <div class="pomodoro-timer" id="pauseCountDown"> 05:00</div>
           <div class="modal-text-stretching" id="stretchingText">
             <div id="stretchingName"></div>
             <div id="stretchingEquipment"></div>
             <div id="stretchingMuscle"></div>
             <div id="stretchingInstructions"></div>
           </div>
-
+          <div>
+            <button id="btn-end-pause" class="change-text-color textoVermelho" type="button"
+              onclick="stretchingDone()">FINALIZAR O ALONGAMENTO</button>
+          </div>
         </div>
       </div>
     </div>

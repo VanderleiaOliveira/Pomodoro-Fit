@@ -1,0 +1,281 @@
+[
+  {
+    "id": 1,
+    "name": "Alongamento de isquiotibiais em pé",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique em pé com uma perna à frente e a outra para trás. Dobre o tronco para a frente a partir da cintura, mantendo as costas retas, e tente tocar os dedos dos pés da perna estendida para trás. Mantenha os joelhos retos."
+  },
+  {
+    "id": 2,
+    "name": "Alongamento de tríceps com toque nas costas",
+    "type": "alongamento",
+    "muscle": "tríceps",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Em pé, estenda um braço acima da cabeça e dobre o cotovelo, tocando as costas com a mão. Use a outra mão para segurar o cotovelo dobrado e puxar suavemente para sentir o alongamento no tríceps."
+  },
+  {
+    "id": 3,
+    "name": "Alongamento de peitoral na parede",
+    "type": "alongamento",
+    "muscle": "peitoral",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique de frente para uma parede a cerca de 30 cm de distância. Coloque as mãos na parede na altura dos ombros com os braços estendidos. Deslize os pés para trás e incline o corpo para a frente, mantendo os calcanhares no chão."
+  },
+  {
+    "id": 4,
+    "name": "Alongamento de abdutores deitado",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de lado no chão e cruze a perna de cima sobre a de baixo. Segure a perna cruzada com as duas mãos e puxe-a em direção ao corpo para sentir o alongamento na parte interna das coxas."
+  },
+  {
+    "id": 5,
+    "name": "Alongamento de gêmeos na parede",
+    "type": "alongamento",
+    "muscle": "gêmeos",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique de frente para uma parede com os pés afastados. Incline o corpo para a frente, mantendo os calcanhares no chão, e apoie as mãos na parede para sentir o alongamento nos gêmeos."
+  },
+  {
+    "id": 6,
+    "name": "Alongamento de ombros com toque nas costas",
+    "type": "alongamento",
+    "muscle": "ombros",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique em pé com os pés afastados na largura dos ombros. Estenda um dos braços para o lado e dobre o cotovelo, tocando as costas com a mão. Use a outra mão para segurar o cotovelo dobrado e puxar suavemente em direção ao peito para sentir o alongamento nos ombros."
+  },
+  {
+    "id": 7,
+    "name": "Alongamento de coluna vertebral sentado",
+    "type": "alongamento",
+    "muscle": "coluna",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão com as pernas estendidas à frente. Dobre um dos joelhos e cruze essa perna sobre a outra. Gire o tronco em direção à perna cruzada e olhe por cima do ombro para sentir o alongamento na coluna."
+  },
+  {
+    "id": 8,
+    "name": "Alongamento de pescoço lateral",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para o lado, levando a orelha em direção ao ombro, para sentir o alongamento no pescoço do lado oposto. Mantenha os ombros relaxados."
+  },
+  {
+    "id": 9,
+    "name": "Alongamento de panturrilhas no degrau",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique de frente para um degrau com a parte da frente dos pés no degrau e os calcanhares no chão. Mantenha os joelhos retos e os quadris empurrados para a frente para sentir o alongamento nas panturrilhas."
+  },
+  {
+    "id": 10,
+    "name": "Alongamento de quadríceps no chão",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "corpo",
+    "difficulty": "beginner",
+    "instructions": "Ajoelhe-se no chão com a perna esquerda e mantenha a perna direita estendida para a frente, com a parte superior do pé apoiada no chão. Pressione o quadril para a frente para sentir o alongamento na parte frontal da coxa direita."
+  },
+  {
+    "id": 11,
+    "name": "Alongamento de isquiotibiais deitado",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de costas no chão com uma perna estendida e a outra levantada, segurando atrás da coxa com as duas mãos. Puxe a perna em direção ao peito para sentir o alongamento na parte posterior da coxa."
+  },
+  {
+    "id": 12,
+    "name": "Alongamento de gêmeos no chão",
+    "type": "alongamento",
+    "muscle": "gêmeos",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Ajoelhe-se no chão com os pés estendidos para trás. Mantenha os calcanhares no chão e pressione os quadris para a frente para sentir o alongamento nos gêmeos."
+  },
+  {
+    "id": 13,
+    "name": "Alongamento de abdutores com rotação",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de lado no chão e cruze a perna de cima sobre a de baixo. Segure a perna cruzada com as duas mãos e puxe-a em direção ao corpo ao mesmo tempo que gira levemente o tronco em direção à perna de baixo."
+  },
+  {
+    "id": 14,
+    "name": "Alongamento de ombros com rotação",
+    "type": "alongamento",
+    "muscle": "ombros",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Em pé, estenda um braço à frente na altura do ombro. Com a outra mão, segure o cotovelo estendido e puxe-o em direção ao peito, girando levemente o tronco na direção oposta."
+  },
+  {
+    "id": 15,
+    "name": "Alongamento de peitoral no chão",
+    "type": "alongamento",
+    "muscle": "peitoral",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de bruços no chão com as mãos colocadas ao lado do peito. Empurre o corpo para cima, mantendo os quadris no chão, para sentir o alongamento no peito e parte frontal dos ombros."
+  },
+  {
+    "id": 16,
+    "name": "Alongamento de lombar com torção",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se no chão com as pernas estendidas à frente. Dobre um dos joelhos e cruze essa perna sobre a outra. Gire o tronco em direção à perna cruzada, apoiando um braço atrás e o outro na perna cruzada."
+  },
+  {
+    "id": 17,
+    "name": "Alongamento de quadríceps com parede",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique de pé de frente para uma parede a cerca de 60 cm de distância. Dobre um dos joelhos e segure o tornozelo com a mão, puxando o calcanhar em direção às nádegas. Mantenha o joelho da outra perna ligeiramente dobrada."
+  },
+  {
+    "id": 18,
+    "name": "Alongamento de panturrilhas com elevação de calcanhares",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com os pés juntos e paralelos. Eleve os calcanhares do chão e segure por alguns segundos. Em seguida, desça nos calcanhares para sentir o alongamento nas panturrilhas."
+  },
+  {
+    "id": 19,
+    "name": "Alongamento de pescoço com rotação",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para um lado e gire-a suavemente para a frente e para trás, mantendo o alongamento no pescoço."
+  },
+  {
+    "id": 20,
+    "name": "Alongamento de coluna lateral",
+    "type": "alongamento",
+    "muscle": "coluna",
+    "equipment": "corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com os pés afastados na largura dos ombros. Estenda um braço acima da cabeça e incline o tronco para o lado oposto, mantendo os quadris estáveis para sentir o alongamento na lateral da coluna."
+  },
+  {
+    "id": 21,
+    "name": "Alongamento de quadríceps com elevação da perna",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Fique em pé em uma perna e segure a outra perna atrás, puxando o calcanhar em direção às nádegas. Mantenha o tronco ereto e o abdômen contraído para manter o equilíbrio."
+  },
+  {
+    "id": 22,
+    "name": "Alongamento de isquiotibiais com rotação do quadril",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Deite-se de costas com uma perna estendida e a outra cruzada sobre ela. Gire o quadril da perna cruzada para o lado oposto, mantendo as costas e a perna estendida no chão."
+  },
+  {
+    "id": 23,
+    "name": "Alongamento de gêmeos em parede",
+    "type": "alongamento",
+    "muscle": "gêmeos",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Fique de frente para uma parede com uma perna à frente e a outra estendida para trás. Incline o corpo para a frente, mantendo os calcanhares no chão e os joelhos retos."
+  },
+  {
+    "id": 24,
+    "name": "Alongamento de abdutores com rotação de tronco",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Deite-se de lado com a perna de cima reta e a de baixo dobrada. Gire o tronco para trás, elevando a perna reta para sentir o alongamento na parte interna da coxa."
+  },
+  {
+    "id": 25,
+    "name": "Alongamento de ombros com rotação de tronco",
+    "type": "alongamento",
+    "muscle": "ombros",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Em pé, estenda um braço à frente na altura do ombro. Com a outra mão, segure o cotovelo estendido e puxe-o em direção ao peito, girando o tronco na direção oposta."
+  },
+  {
+    "id": 26,
+    "name": "Alongamento de peitoral com elevação de braço",
+    "type": "alongamento",
+    "muscle": "peitoral",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Fique em pé de frente para uma parede a cerca de 30 cm de distância. Coloque uma mão na parede na altura do ombro e gire o corpo para o lado oposto, elevando o braço estendido."
+  },
+  {
+    "id": 27,
+    "name": "Alongamento de lombar com rotação e elevação",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Deite-se de costas com os joelhos dobrados e os pés no chão. Mantenha um joelho pressionado contra o peito e o outro estendido, depois gire o quadril para o lado oposto."
+  },
+  {
+    "id": 28,
+    "name": "Alongamento de panturrilhas em parede com elevação de calcanhares",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Fique de frente para uma parede com os pés afastados. Incline o corpo para a frente, mantendo os calcanhares no chão, e eleve os calcanhares para intensificar o alongamento nas panturrilhas."
+  },
+  {
+    "id": 29,
+    "name": "Alongamento de pescoço com tração",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para um lado e use a mão do mesmo lado para aplicar uma leve tração, puxando a cabeça um pouco para intensificar o alongamento no pescoço."
+  },
+  {
+    "id": 30,
+    "name": "Alongamento de coluna com rotação profunda",
+    "type": "alongamento",
+    "muscle": "coluna",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
+  },
+  {
+    "id": 32,
+    "name": "Alongamento de coluna com rotação profunda",
+    "type": "alongamento",
+    "muscle": "coluna",
+    "equipment": "corpo",
+    "difficulty": "advanced",
+    "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
+  }
+]

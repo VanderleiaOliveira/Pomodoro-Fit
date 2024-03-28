@@ -13,9 +13,14 @@ function showStretchingModal() {
   const modalStretchingBg = document.getElementById('modal-stretching');
   modalStretchingBg.classList.add('showModal');
   changeTextColorByDifficultyInConfigButton();
+  startStretchingPause();
 }
 
 function hideStretchingModal() {
+  const durationMinutes =
+    parseInt(localStorage.getItem('pomodoroDuration')) || 25;
+  timeLeftInSeconds = durationMinutes * 60;
+  updateCountdownDisplay();
   const modalStretchingBg = document.getElementById('modal-stretching');
   modalStretchingBg.classList.remove('showModal');
 }
@@ -23,6 +28,10 @@ function hideStretchingModal() {
 // para inicializar o sistema
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Verifica se a chave 'pause' existe no localStorage e, se não, define como '0' para não reiciar ela toda vez que atualizar as configurações
+  if (localStorage.getItem('pause') === null) {
+    localStorage.setItem('pause', '0');
+  }
   // a função abaixo garante que na inicialização do sistema o modal de alongamentos não seja exibido
   hideStretchingModal();
 
@@ -54,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // area de salva na localStorage as configurações do pomodoro e o nome do usário
   const form = document.getElementById('configPomodoro');
-
   // Adiciona um ouvinte de evento para o envio do formulário
   form.addEventListener('submit', function (event) {
     // Previne o comportamento padrão do formulário (recarregar a página)
@@ -83,20 +91,21 @@ document.addEventListener('DOMContentLoaded', function () {
       parseInt(localStorage.getItem('pomodoroDuration')) || 25;
     timeLeftInSeconds = durationMinutes * 60;
     updateCountdownDisplay();
+    updateLevelProgress();
   });
 });
 
 // muda a cor do fundo e dos botões conforme a dificuldade escolhida pelo usuário
 function changeBackgroundByDifficulty() {
   let difficulty = localStorage.getItem('difficulty');
-  console.log(difficulty);
+  // console.log(difficulty);
   // a classe change-background deve ser colocada em todos elementos que precisam ter seus fundos alterados
   //abaixo estes elementos são selecionados
   let elementsToChange = document.querySelectorAll('.change-background');
   let backgroundClass = '';
 
   switch (difficulty) {
-    case 'begginer':
+    case 'beginner':
       backgroundClass = 'fundoVerde';
       break;
     case 'intermediate':
@@ -116,14 +125,14 @@ function changeBackgroundByDifficulty() {
 
 function changeTextColorByDifficultyInConfigButton() {
   let difficulty = localStorage.getItem('difficulty');
-  console.log(difficulty);
+  // console.log(difficulty);
   // Seleciona os elementos que terão a cor do texto alterada
   let elementsToChangeTextColor =
     document.querySelectorAll('.change-text-color');
   let textColorClass = '';
 
   switch (difficulty) {
-    case 'begginer':
+    case 'beginner':
       textColorClass = 'textoVerde';
       break;
     case 'intermediate':
@@ -141,13 +150,53 @@ function changeTextColorByDifficultyInConfigButton() {
   });
 }
 
+// parte da gamificação do pomodoro:
+async function updateLevelProgress() {
+  const username = localStorage.getItem('username'); // Obtém o nome do usuário do localStorage
+  const difficulty = localStorage.getItem('difficulty');
+  const stretchings = await loadStretchings(); // Assumindo que essa função retorna todos os alongamentos disponíveis
+  const previousStretchings = JSON.parse(
+    localStorage.getItem('previousStretchings') || '[]'
+  );
+
+  const totalForDifficulty = stretchings.filter(
+    (stretch) => stretch.difficulty === difficulty
+  ).length;
+  const remaining = totalForDifficulty - previousStretchings.length;
+
+  // Atualiza o texto do link com o número de alongamentos restantes
+  document.getElementById('level').innerText = `${remaining}`;
+
+  // Atualiza o atributo title do link
+  const levelLink = document.getElementById('level');
+  if (username) {
+    // Verifica se o nome do usuário existe antes de tentar usar
+    levelLink.setAttribute(
+      'title',
+      `${username}, você ainda tem ${remaining} alongamentos para concluir este nível`
+    );
+  } else {
+    // Caso o nome do usuário não esteja disponível, pode definir um texto padrão
+    levelLink.setAttribute(
+      'title',
+      `Você ainda tem ${remaining} alongamentos para concluir este nível`
+    );
+  }
+}
+
 let countdownInterval;
 let timeLeftInSeconds;
 let isPomodoroRunning = false;
 //  a função abaixo alterna o icone do botão de iniciar ou pausar o pomodoro
-
+function updateCountdownDisplay() {
+  const minutes = Math.floor(timeLeftInSeconds / 60);
+  const seconds = timeLeftInSeconds % 60;
+  document.getElementById('pomodoroCountdown').textContent = `${String(
+    minutes
+  ).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
 function togglePomodoro(event) {
-  console.log(isPomodoroRunning);
+  // console.log(isPomodoroRunning);
   event.preventDefault();
   const playPauseIcon = document.getElementById('playPauseIcon');
 
@@ -159,8 +208,10 @@ function togglePomodoro(event) {
     playPauseIcon.classList.replace('fa-pause', 'fa-play');
   }
 }
-
+// carrega o som de fim do pomodoro
+const pomodoroEndSound = new Audio('/assets/sounds/pomodoro-end.mp3');
 function startPomodoro() {
+  const playPauseIcon = document.getElementById('playPauseIcon');
   if (!isPomodoroRunning) {
     // Se o Pomodoro não estiver rodando, prepare para iniciar ou continuar
     if (!countdownInterval) {
@@ -181,8 +232,10 @@ function startPomodoro() {
           clearInterval(countdownInterval);
           countdownInterval = null; // Limpa o intervalo de contagem regressiva
           isPomodoroRunning = false; // Atualiza o estado do Pomodoro
+          pomodoroEndSound.play(); // Reproduz o som de fim de Pomodoro
           showStretchingModal(); // Exibe o modal de alongamento ao final do Pomodoro
           showStretching();
+          playPauseIcon.classList.replace('fa-pause', 'fa-play');
         }
       }, 1000);
     }
@@ -220,14 +273,6 @@ function resetPomodoro() {
   if (playPauseIcon.classList.contains('fa-pause')) {
     playPauseIcon.classList.replace('fa-pause', 'fa-play');
   }
-}
-
-function updateCountdownDisplay() {
-  const minutes = Math.floor(timeLeftInSeconds / 60);
-  const seconds = timeLeftInSeconds % 60;
-  document.getElementById('pomodoroCountdown').textContent = `${String(
-    minutes
-  ).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
 // ALONGAMENTOS :
@@ -272,7 +317,7 @@ async function showStretching() {
     // Determina a imagem com base na dificuldade
     let imageUrl;
     switch (difficulty) {
-      case 'begginer':
+      case 'beginner':
         imageUrl = '/assets/img/alongamentos/iniciante.png';
         break;
       case 'intermediate':
@@ -299,10 +344,19 @@ async function showStretching() {
 }
 
 function stretchingDone() {
-  document.getElementById('stretchingText').style.display = 'none';
-  document.getElementById('stretchingImage').style.display = 'none';
+  // Encerra o contador de pausa
+  if (pauseCountDownInterval) {
+    clearInterval(pauseCountDownInterval);
+    pauseCountDownInterval = null;
+  }
 
-  // Limpa o conteúdo (opcional)
+  // Incrementa o contador de pausas e verifica se deve reiniciar para uma pausa longa
+  incrementPauseCount();
+
+  // Fecha o modal de alongamento
+  hideStretchingModal();
+
+  // Limpa o conteúdo do alongamento (se necessário)
   document.getElementById('stretchingName').textContent = '';
   document.getElementById('stretchingEquipment').textContent = '';
   document.getElementById('stretchingMuscle').textContent = '';
@@ -312,39 +366,75 @@ function stretchingDone() {
   const totalStretchingDone =
     parseInt(localStorage.getItem('totalStretchingDone') || '0') + 1;
   localStorage.setItem('totalStretchingDone', totalStretchingDone.toString());
+
+  // Atualiza o progresso no nível
+  updateLevelProgress();
 }
 
-// parte da gamificação do pomodoro:
+// pausas do pomodoro
+let pauseCountDownInterval;
+let pauseTimeLeftInSeconds;
 
-async function updateLevelProgress() {
-  const username = localStorage.getItem('username'); // Obtém o nome do usuário do localStorage
-  const difficulty = localStorage.getItem('difficulty');
-  const stretchings = await loadStretchings(); // Assumindo que essa função retorna todos os alongamentos disponíveis
-  const previousStretchings = JSON.parse(
-    localStorage.getItem('previousStretchings') || '[]'
+function updatePauseCountDownDisplay() {
+  const minutes = Math.floor(pauseTimeLeftInSeconds / 60);
+  const seconds = pauseTimeLeftInSeconds % 60;
+  document.getElementById('pauseCountDown').textContent = `${String(
+    minutes
+  ).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+// carrega o som de fim da pausa
+const pomodoroEndPauseSoung = new Audio('/assets/sounds/pause-end.mp3');
+
+function startStretchingPause() {
+  const pauseCount = parseInt(localStorage.getItem('pause')) || 0;
+  const isLongPause = pauseCount === 4;
+
+  const pauseDuration = isLongPause
+    ? parseInt(localStorage.getItem('pomodoroLongPause'))
+    : parseInt(localStorage.getItem('pomodoroPause'));
+
+  console.log(
+    `Iniciando ${
+      isLongPause ? 'uma pausa longa' : 'uma pausa curta'
+    } de ${pauseDuration} minutos.`
   );
 
-  const totalForDifficulty = stretchings.filter(
-    (stretch) => stretch.difficulty === difficulty
-  ).length;
-  const remaining = totalForDifficulty - previousStretchings.length;
+  pauseTimeLeftInSeconds = pauseDuration * 60;
+  updatePauseCountDownDisplay();
 
-  // Atualiza o texto do link com o número de alongamentos restantes
-  document.getElementById('level').innerText = `${remaining}`;
+  pauseCountDownInterval = setInterval(() => {
+    if (pauseTimeLeftInSeconds > 0) {
+      pauseTimeLeftInSeconds--;
+      updatePauseCountDownDisplay();
+    } else {
+      clearInterval(pauseCountDownInterval);
+      pauseCountDownInterval = null;
+      pomodoroEndPauseSoung.play();
+    }
+  }, 1000);
+}
 
-  // Atualiza o atributo title do link
-  const levelLink = document.getElementById('level');
-  if (username) {
-    // Verifica se o nome do usuário existe antes de tentar usar
-    levelLink.setAttribute(
-      'title',
-      `${username}, você ainda tem ${remaining} alongamentos para concluir este nível`
-    );
+function incrementPauseCount() {
+  let pauseCount = parseInt(localStorage.getItem('pause')) || 0;
+
+  // Incrementa o contador de pausas até 4, então reinicia para a próxima ser uma pausa longa
+  if (pauseCount === 4) {
+    console.log(`Pausa atual: ${pauseCount} - Próxima será uma pausa curta.`);
+    localStorage.setItem('pause', '0'); // Reinicia o contador de pausas
   } else {
-    // Caso o nome do usuário não esteja disponível, pode definir um texto padrão
-    levelLink.setAttribute(
-      'title',
-      `Você ainda tem ${remaining} alongamentos para concluir este nível`
+    pauseCount++;
+    console.log(
+      `Pausa atual: ${pauseCount} - ${
+        pauseCount === 4
+          ? 'Próxima será uma pausa longa'
+          : 'Próxima será uma pausa curta'
+      } de ${
+        pauseCount === 4
+          ? localStorage.getItem('pomodoroLongPause')
+          : localStorage.getItem('pomodoroPause')
+      } minutos.`
     );
+    localStorage.setItem('pause', pauseCount.toString());
   }
 }

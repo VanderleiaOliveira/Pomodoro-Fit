@@ -198,6 +198,13 @@ form {
   text-shadow: 3px 3px 2.6px rgba(0, 0, 0, 0.15);
 }
 
+#pauseCountdown {
+  font-family: prata;
+  font-size: 90px;
+  color: var(--bone);
+  text-shadow: 3px 3px 2.6px rgba(0, 0, 0, 0.15);
+}
+
 .pomodoro-controls {
   margin-top: 15px;
   display: flex;

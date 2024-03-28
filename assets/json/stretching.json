@@ -1,281 +1,1136 @@
 [
   {
     "id": 1,
-    "name": "Alongamento de isquiotibiais em pé",
+    "name": "Vácuo do Estômago",
     "type": "alongamento",
-    "muscle": "isquiotibiais",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique em pé com uma perna à frente e a outra para trás. Dobre o tronco para a frente a partir da cintura, mantendo as costas retas, e tente tocar os dedos dos pés da perna estendida para trás. Mantenha os joelhos retos."
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Para começar, fique em pé com seus pés afastados na largura dos ombros. Coloque suas mãos nos quadris. Esta é a posição inicial. Agora, inspire lentamente o máximo de ar possível e então comece a expirar o máximo possível enquanto traz seu estômago para dentro o máximo possível e mantenha essa posição. Tente visualizar seu umbigo tocando sua coluna vertebral. Uma contração isométrica dura cerca de 20 segundos. Durante a sustentação de 20 segundos, tente respirar normalmente. Então, inspire e traga seu estômago de volta à posição inicial. Uma vez que você tenha praticado este exercício, tente realizá-lo por mais de 20 segundos. Dica: Você pode aumentar gradualmente para 40-60 segundos. Repita pela quantidade recomendada de séries."
   },
   {
     "id": 2,
-    "name": "Alongamento de tríceps com toque nas costas",
+    "name": "Círculos de Quadril em Pé",
     "type": "alongamento",
-    "muscle": "tríceps",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Em pé, estenda um braço acima da cabeça e dobre o cotovelo, tocando as costas com a mão. Use a outra mão para segurar o cotovelo dobrado e puxar suavemente para sentir o alongamento no tríceps."
+    "muscle": "abdutor",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Comece em pé sobre uma perna, segurando um suporte vertical. Levante o joelho não apoiado até 90 graus. Esta será sua posição inicial. Abra o quadril o máximo possível, tentando fazer um grande círculo com seu joelho. Realize este movimento lentamente por um número de repetições e repita do outro lado."
   },
   {
     "id": 3,
-    "name": "Alongamento de peitoral na parede",
+    "name": "Alongamento Cruzado de Perna Única Deitado",
     "type": "alongamento",
-    "muscle": "peitoral",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique de frente para uma parede a cerca de 30 cm de distância. Coloque as mãos na parede na altura dos ombros com os braços estendidos. Deslize os pés para trás e incline o corpo para a frente, mantendo os calcanhares no chão."
+    "muscle": "abdutor",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com as pernas estendidas. Cruze uma perna sobre seu corpo com o joelho dobrado, tentando tocar o joelho no chão. Seu parceiro deve ajoelhar-se ao seu lado, segurando seu ombro para baixo com uma mão e controlando a perna cruzada com a outra. Esta será sua posição inicial. Tente levantar o joelho dobrado do chão enquanto seu parceiro impede qualquer movimento real. Após 10-20 segundos, relaxe a perna enquanto seu parceiro pressiona gentilmente o joelho em direção ao chão. Repita com o outro lado."
   },
   {
     "id": 4,
-    "name": "Alongamento de abdutores deitado",
+    "name": "Groiners",
     "type": "alongamento",
-    "muscle": "abdutores",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Deite-se de lado no chão e cruze a perna de cima sobre a de baixo. Segure a perna cruzada com as duas mãos e puxe-a em direção ao corpo para sentir o alongamento na parte interna das coxas."
+    "muscle": "adutores",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Comece em uma posição de flexão no chão. Esta será sua posição inicial. Usando ambas as pernas, pule para frente aterrissando com seus pés ao lado de suas mãos. Mantenha sua cabeça erguida ao fazer isso. Retorne à posição inicial e imediatamente repita o movimento, continuando por 10-20 repetições."
   },
   {
     "id": 5,
-    "name": "Alongamento de gêmeos na parede",
+    "name": "Elevações Laterais de Perna",
     "type": "alongamento",
-    "muscle": "gêmeos",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique de frente para uma parede com os pés afastados. Incline o corpo para a frente, mantendo os calcanhares no chão, e apoie as mãos na parede para sentir o alongamento nos gêmeos."
+    "muscle": "adutores",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique ao lado de uma cadeira, que você pode segurar como apoio. Fique em uma perna. Esta será sua posição inicial. Mantendo sua perna reta, levante-a o máximo possível para o lado e balance-a para baixo, permitindo que cruze a perna oposta. Repita este movimento de balanço 5-10 vezes, aumentando o alcance do movimento conforme você faz."
   },
   {
     "id": 6,
-    "name": "Alongamento de ombros com toque nas costas",
+    "name": "Alongamento da Virilha e das Costas",
     "type": "alongamento",
-    "muscle": "ombros",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique em pé com os pés afastados na largura dos ombros. Estenda um dos braços para o lado e dobre o cotovelo, tocando as costas com a mão. Use a outra mão para segurar o cotovelo dobrado e puxar suavemente em direção ao peito para sentir o alongamento nos ombros."
+    "muscle": "adutores",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão com os joelhos dobrados e os pés juntos. Entrelace seus dedos atrás de sua cabeça. Esta será sua posição inicial. Curve-se parabaixo, trazendo seus cotovelos para o interior de suas coxas. Após uma breve pausa, retorne à posição inicial com a cabeça erguida e as costas retas. Repita por 10-20 repetições."
   },
   {
     "id": 7,
-    "name": "Alongamento de coluna vertebral sentado",
+    "name": "SMR dos Adutores",
     "type": "alongamento",
-    "muscle": "coluna",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Sente-se no chão com as pernas estendidas à frente. Dobre um dos joelhos e cruze essa perna sobre a outra. Gire o tronco em direção à perna cruzada e olhe por cima do ombro para sentir o alongamento na coluna."
+    "muscle": "adutores",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de frente com uma perna sobre um rolo de espuma. Rode a perna de modo que o rolo de espuma faça contato contra a parte interna da sua coxa. Transfira o máximo de peso para o rolo de espuma conforme tolerável. Enquanto tenta relaxar os músculos da coxa interna, role sobre o rolo de espuma entre seu quadril e joelho, segurando pontos de tensão por 10-30 segundos. Repita com a outra perna."
   },
   {
     "id": 8,
-    "name": "Alongamento de pescoço lateral",
+    "name": "Adutores/Virilha",
     "type": "alongamento",
-    "muscle": "pescoço",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para o lado, levando a orelha em direção ao ombro, para sentir o alongamento no pescoço do lado oposto. Mantenha os ombros relaxados."
+    "muscle": "adutores",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com os pés elevados em direção ao teto. Peça para seu parceiro segurar seus pés ou tornozelos. Abduza suas pernas o máximo que puder. Esta será sua posição inicial. Tente espremer suas pernas juntas por 10 segundos ou mais, enquanto seu parceiro impede que você faça isso. Agora, relaxe os músculos de suas pernas enquanto seu parceiro empurra seus pés para fora, esticando o máximo que for confortável para você. Certifique-se de informar seu parceiro quando o alongamento for adequado para prevenir excesso de estiramento ou lesão."
   },
   {
     "id": 9,
-    "name": "Alongamento de panturrilhas no degrau",
+    "name": "Virilha e Perna Dobrada Deitado",
     "type": "alongamento",
-    "muscle": "panturrilhas",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Fique de frente para um degrau com a parte da frente dos pés no degrau e os calcanhares no chão. Mantenha os joelhos retos e os quadris empurrados para a frente para sentir o alongamento nas panturrilhas."
+    "muscle": "adutores",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com os joelhos dobrados e as solas dos pés unidas. Peça para seu parceiro segurar seus joelhos. Esta será sua posição inicial. Tente espremer seus joelhos juntos, enquanto seu parceiro impede qualquer movimento. Após 10-20 segundos, relaxe seus músculos enquanto seu parceiro gentilmente empurra seus joelhos em direção ao chão. Certifique-se de informar seu auxiliar quando o alongamento for adequado para prevenir lesão ou excesso de estiramento."
   },
   {
     "id": 10,
-    "name": "Alongamento de quadríceps no chão",
+    "name": "Virilha com Perna Dobrada Deitado",
     "type": "alongamento",
-    "muscle": "quadríceps",
-    "equipment": "corpo",
-    "difficulty": "begginer",
-    "instructions": "Ajoelhe-se no chão com a perna esquerda e mantenha a perna direita estendida para a frente, com a parte superior do pé apoiada no chão. Pressione o quadril para a frente para sentir o alongamento na parte frontal da coxa direita."
+    "muscle": "adutores",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com os joelhos dobrados e as solas dos pés unidas. Peça ao seu parceiro para segurar seus joelhos. Esta será sua posição inicial. Tente apertar seus joelhos um contra o outro, enquanto seu parceiro impede qualquer movimento. Após 10-20 segundos, relaxe seus músculos enquanto seu parceiro gentilmente empurra seus joelhos em direção ao chão. Certifique-se de informar seu auxiliar quando o alongamento for adequado para prevenir lesões ou alongamento excessivo."
   },
   {
     "id": 11,
-    "name": "Alongamento de isquiotibiais deitado",
+    "name": "Alongamento dos Bíceps em Pé",
     "type": "alongamento",
-    "muscle": "isquiotibiais",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Deite-se de costas no chão com uma perna estendida e a outra levantada, segurando atrás da coxa com as duas mãos. Puxe a perna em direção ao peito para sentir o alongamento na parte posterior da coxa."
+    "muscle": "bíceps",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Una suas mãos atrás das costas com as palmas juntas, estique os braços e então os gire de modo que suas palmas fiquem voltadas para baixo. Levante seus braços para cima e segure até sentir um alongamento nos bíceps."
   },
   {
     "id": 12,
-    "name": "Alongamento de gêmeos no chão",
+    "name": "Bíceps Sentado",
     "type": "alongamento",
-    "muscle": "gêmeos",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Ajoelhe-se no chão com os pés estendidos para trás. Mantenha os calcanhares no chão e pressione os quadris para a frente para sentir o alongamento nos gêmeos."
+    "muscle": "bíceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão com os joelhos dobrados e seu parceiro em pé atrás de você. Estenda seus braços retos para trás com as palmas voltadas uma para a outra. Seu parceiro segurará seus pulsos. Esta será a posição inicial. Tente flexionar seus cotovelos, enquanto seu parceiro impede qualquer movimento real. Após 10-20 segundos, relaxe seus braços enquanto seu parceiro gentilmente puxa seus pulsos para cima para alongar seus bíceps. Certifique-se de informar seu parceiro quando o alongamento estiver adequado para prevenir lesões ou alongamento excessivo."
   },
   {
     "id": 13,
-    "name": "Alongamento de abdutores com rotação",
+    "name": "SMR do Braquial",
     "type": "alongamento",
-    "muscle": "abdutores",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Deite-se de lado no chão e cruze a perna de cima sobre a de baixo. Segure a perna cruzada com as duas mãos e puxe-a em direção ao corpo ao mesmo tempo que gira levemente o tronco em direção à perna de baixo."
+    "muscle": "bíceps",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de lado, com o braço superior contra o rolo de espuma. O braço superior deve estar mais ou menos alinhado com seu corpo, com a parte de fora do bíceps pressionada contra o rolo de espuma. Levante seus quadris do chão, apoiando seu peso em seu braço e em seus pés. Segure por 10-30 segundos e depois troque de lado."
   },
   {
     "id": 14,
-    "name": "Alongamento de ombros com rotação",
+    "name": "Alongamento dos Bíceps em Pé",
     "type": "alongamento",
-    "muscle": "ombros",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Em pé, estenda um braço à frente na altura do ombro. Com a outra mão, segure o cotovelo estendido e puxe-o em direção ao peito, girando levemente o tronco na direção oposta."
+    "muscle": "bíceps",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Junte suas mãos atrás das costas com as palmas viradas uma para a outra, estenda os braços e então gire-os de modo que suas palmas fiquem voltadas para baixo. Levante os braços para cima e mantenha até sentir o alongamento nos bíceps."
   },
   {
     "id": 15,
-    "name": "Alongamento de peitoral no chão",
+    "name": "Bíceps Sentado",
     "type": "alongamento",
-    "muscle": "peitoral",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Deite-se de bruços no chão com as mãos colocadas ao lado do peito. Empurre o corpo para cima, mantendo os quadris no chão, para sentir o alongamento no peito e parte frontal dos ombros."
+    "muscle": "bíceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão com os joelhos dobrados e seu parceiro de pé atrás de você. Estenda os braços para trás com as palmas uma de frente para a outra. Seu parceiro segurará seus pulsos. Esta será sua posição inicial. Tente flexionar os cotovelos enquanto seu parceiro impede qualquer movimento real. Após 10-20 segundos, relaxe os braços enquanto seu parceiro suavemente eleva seus pulsos para esticar seus bíceps. Certifique-se de informar seu parceiro quando o alongamento for suficiente para evitar lesões ou excesso de alongamento."
   },
   {
     "id": 16,
-    "name": "Alongamento de lombar com torção",
+    "name": "SMR do Braquial",
     "type": "alongamento",
-    "muscle": "lombar",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Sente-se no chão com as pernas estendidas à frente. Dobre um dos joelhos e cruze essa perna sobre a outra. Gire o tronco em direção à perna cruzada, apoiando um braço atrás e o outro na perna cruzada."
+    "muscle": "bíceps",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de lado, com o braço superior contra o rolo de espuma. O braço superior deve estar mais ou menos alinhado com seu corpo, com a parte externa do bíceps pressionada contra o rolo. Levante seus quadris do chão, apoiando seu peso no braço e nos pés. Mantenha a posição por 10-30 segundos e então troque de lado."
   },
   {
     "id": 17,
-    "name": "Alongamento de quadríceps com parede",
+    "name": "SMR do Braquial",
     "type": "alongamento",
-    "muscle": "quadríceps",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Fique de pé de frente para uma parede a cerca de 60 cm de distância. Dobre um dos joelhos e segure o tornozelo com a mão, puxando o calcanhar em direção às nádegas. Mantenha o joelho da outra perna ligeiramente dobrada."
+    "muscle": "bíceps",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de lado, com o braço superior contra o rolo de espuma. O braço superior deve estar mais ou menos alinhado com seu corpo, com a parte externa do bíceps pressionada contra o rolo. Levante seus quadris do chão, apoiando seu peso no braço e nos pés. Mantenha por 10-30 segundos e depois troque de lado."
   },
   {
     "id": 18,
-    "name": "Alongamento de panturrilhas com elevação de calcanhares",
+    "name": "Círculos de Tornozelo",
     "type": "alongamento",
     "muscle": "panturrilhas",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Fique em pé com os pés juntos e paralelos. Eleve os calcanhares do chão e segure por alguns segundos. Em seguida, desça nos calcanhares para sentir o alongamento nas panturrilhas."
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Use um objeto firme como um suporte de agachamento para se segurar. Levante a perna direita no ar (apenas cerca de 5 cm do chão) e faça um movimento circular com o dedão do pé. Finja que está desenhando um grande círculo com ele. Dica: Um círculo equivale a 1 repetição. Respire normalmente enquanto executa o movimento. Quando terminar com o pé direito, repita com a perna esquerda. Variações: Nenhuma"
   },
   {
     "id": 19,
-    "name": "Alongamento de pescoço com rotação",
+    "name": "Círculos de Joelho",
     "type": "alongamento",
-    "muscle": "pescoço",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para um lado e gire-a suavemente para a frente e para trás, mantendo o alongamento no pescoço."
+    "muscle": "panturrilhas",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique de pé com as pernas juntas e as mãos na cintura. Agora mova seus joelhos em um movimento circular enquanto respira normalmente. Repita pelo número recomendado de repetições."
   },
   {
     "id": 20,
-    "name": "Alongamento de coluna lateral",
+    "name": "SMR da Panturrilha",
     "type": "alongamento",
-    "muscle": "coluna",
-    "equipment": "corpo",
-    "difficulty": "intermediate",
-    "instructions": "Fique em pé com os pés afastados na largura dos ombros. Estenda um braço acima da cabeça e incline o tronco para o lado oposto, mantendo os quadris estáveis para sentir o alongamento na lateral da coluna."
+    "muscle": "panturrilhas",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Comece sentado no chão. Coloque um rolo de espuma embaixo da parte inferior da perna. A outra perna pode ser cruzada sobre a oposta ou colocada no chão, suportando parte do seu peso. Esta será sua posição inicial. Coloque suas mãos ao lado ou logo atrás de você e pressione para levantar seus quadris do chão, colocando muito do seu peso contra o músculo da panturrilha. Role de abaixo do joelho até acima do tornozelo, pausando em pontos de tensão por 10-30 segundos. Repita para a outra perna."
   },
   {
     "id": 21,
+    "name": "SMR do Tibial Anterior",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Comece sentado no chão com as pernas dobradas e os pés no chão. Usando um Rolo Muscular ou um rolo de abrir massa, aplique pressão aos músculos na parte externa de suas canelas. Trabalhe de logo abaixo do joelho até acima do tornozelo, pausando em pontos de tensão por 10-30 segundos. Repita na outra perna."
+  },
+  {
+    "id": 22,
+    "name": "Alongamento da Panturrilha com Cotovelos Contra a Parede",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique de frente para uma parede, a alguns passos de distância. Apoie-se contra a parede, colocando seu peso nos antebraços. Tente manter seus calcanhares no chão. Mantenha por 10-20 segundos. Você pode mover-se para mais longe ou mais perto da parede, tornando-o mais difícil ou mais fácil, respectivamente."
+  },
+  {
+    "id": 23,
+    "name": "Alongamento em Pé do Sóleo e do Tendão de Aquiles",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique com os pés afastados na distância dos quadris, um pé levemente à frente do outro. Dobre ambos os joelhos, mantendo o calcanhar de trás no chão. Troque de lado."
+  },
+  {
+    "id": 24,
+    "name": "SMR do Pé",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Este exercício alonga a fáscia dos músculos dos pés. Comece sentado com os sapatos removidos. Usando um rolo para pés ou um objeto similar, como um pequeno pedaço de tubo de PVC, coloque seu pé contra o rolo atravessando o arco do seu pé. Esta será sua posição inicial. Pressione firmemente, rolando pelo arco do seu pé. Mantenha por 10-30 segundos e depois troque de pé."
+  },
+  {
+    "id": 25,
+    "name": "Alongamento do Peito com Mãos Atrás da Cabeça",
+    "type": "alongamento",
+    "muscle": "peito",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão com as pernas confortavelmente à sua frente. Seu peito deve estar elevado e suas costas retas. Coloque suas mãos na parte de trás da sua cabeça e entrelace seus dedos. Esta será sua posição inicial. Peça ao seu parceiro para ficar atrás de você e colocar as mãos na parte interna dos seus cotovelos. Permita que ele puxe para trás os seus cotovelos até que você sinta um alongamento no peito e nos deltoides frontais. Mantenha por 10 segundos. Após 10 segundos, tente trazer seus cotovelos para dentro contra a resistência do seu parceiro. Mantenha essa contração por 6 segundos. Agora, relaxe seus músculos e peça ao seu parceiro para gentilmente puxar os cotovelos para trás o máximo que for confortável para você por 30 segundos. (Se desejar, tente contrair suas costas superiores para maiores ganhos de ROM.)"
+  },
+  {
+    "id": 26,
+    "name": "Cotovelos para Trás",
+    "type": "alongamento",
+    "muscle": "peito",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique em pé retamente. Coloque ambas as mãos na sua parte inferior das costas, dedos apontando para baixo e cotovelos para fora. Em seguida, gentilmente puxe seus cotovelos para trás tentando tocá-los juntos."
+  },
+  {
+    "id": 27,
+    "name": "Alongamento do Peito na Bola de Exercícios",
+    "type": "alongamento",
+    "muscle": "peito",
+    "equipment": "bola de exercício",
+    "difficulty": "beginner",
+    "instructions": "Fique de mãos e joelhos ao lado de uma bola de exercícios. Coloque seus cotovelos em cima da bola, mantendo seu braço para o lado. Esta será sua posição inicial. Abaixe seu torso em direção ao chão, mantendo seu cotovelo em cima da bola. Mantenha o alongamento por 20-30 segundos e repita com o outro braço."
+  },
+  {
+    "id": 28,
+    "name": "Alongamento Pass-through com Banda",
+    "type": "alongamento",
+    "muscle": "peito",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Comece em pé com as pernas juntas, segurando uma barra ou uma vassoura. Pegue na barra com uma pegada um pouco mais larga que a largura dos ombros e segure-a à sua frente com as palmas para baixo. Levante cuidadosamente a barra por cima e atrás da sua cabeça. Mantenha-se consciente do alinhamento do seu corpo inferior. Mantenha os músculos do estômago contraídos e os músculos da parte inferior das costas contraídos para evitar arquear a parte inferior das costas."
+  },
+  {
+    "id": 29,
+    "name": "Alongamento dos Antebraços Ajoelhado",
+    "type": "alongamento",
+    "muscle": "antebraços",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Comece ajoelhando-se em um tapete com as palmas das mãos no chão e os dedos apontando para trás em direção aos seus joelhos. Lentamente, incline-se para trás mantendo as palmas no chão até sentir um alongamento nos pulsos e antebraços. Mantenha por 20-30 segundos."
+  },
+  {
+    "id": 30,
+    "name": "Círculos de Pulso",
+    "type": "alongamento",
+    "muscle": "antebraços",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Comece em pé, com os pés afastados na largura dos ombros. Eleve seus braços para o lado até que estejam totalmente estendidos e paralelos ao chão, na altura dos ombros. Dica: Seu torso e braços devem formar a letra \"T\". Suas palmas devem estar voltadas para baixo. Esta é a posição inicial. Mantendo todo o corpo imóvel, exceto os pulsos, comece a rodar ambos os pulsos para a frente em um movimento circular. Dica: Imagine que está tentando desenhar círculos usando as mãos como pincel. Respire normalmente enquanto realiza este exercício. Repita pelo número recomendado de repetições. Variação: Você pode segurar pequenos pesos para adicionar resistência."
+  },
+  {
+    "id": 31,
+    "name": "Glúteo Sentado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Em posição sentada com os joelhos dobrados, cruze um tornozelo sobre o joelho oposto. Seu parceiro ficará atrás de você. Agora, incline-se para a frente enquanto seu parceiro apoia seus ombros com as mãos. Esta será sua posição inicial. Tente empurrar seu torso para trás por 10-20 segundos, enquanto seu parceiro impede qualquer movimento real do seu torso. Agora relaxe seus músculos enquanto seu parceiro aumenta o alongamento, empurrando gentilmente seu torso para frente por 10-20 segundos."
+  },
+  {
+    "id": 32,
+    "name": "Glúteo Deitado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com seu parceiro ajoelhado ao seu lado. Flexione o quadril de uma perna, levantando-a do chão. Rode a perna para que o pé fique sobre o quadril oposto, a perna inferior perpendicular ao seu corpo. Seu parceiro deve segurar o joelho e o tornozelo no lugar. Esta será sua posição inicial. Tente empurrar sua perna em direção ao seu parceiro, que deve impedir qualquer movimento real da perna. Após 10-20 segundos, relaxe completamente enquanto seu parceiro gentilmente empurra o tornozelo e o joelho em direção ao seu peito. Certifique-se de informar seu auxiliar quando o alongamento for adequado para evitar lesões ou excesso de alongamento."
+  },
+  {
+    "id": 33,
+    "name": "Glúteo Deitado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com seu parceiro ajoelhado ao seu lado. Flexione o quadril de uma perna, elevando-a do chão. Rode a perna de modo que o pé fique sobre o quadril oposto, com a perna inferior perpendicular ao seu corpo. Seu parceiro deve segurar o joelho e o tornozelo no lugar. Esta será sua posição inicial. Tente empurrar sua perna em direção ao seu parceiro, que deve impedir qualquer movimento real da perna. Após 10-20 segundos, relaxe completamente enquanto seu parceiro suavemente empurra o tornozelo e o joelho em direção ao seu peito. Certifique-se de informar seu auxiliar quando o alongamento estiver adequado para prevenir lesões ou alongamento excessivo."
+  },
+  {
+    "id": 34,
+    "name": "Glúteo Sentado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Em uma posição sentada com os joelhos dobrados, cruze um tornozelo sobre o joelho oposto. Seu parceiro ficará atrás de você. Agora, incline-se para frente enquanto seu parceiro segura seus ombros com as mãos. Esta será sua posição inicial. Tente empurrar seu tronco para trás por 10-20 segundos, enquanto seu parceiro impede qualquer movimento real do seu tronco. Agora relaxe seus músculos enquanto seu parceiro aumenta o alongamento, empurrando gentilmente seu tronco para frente por 10-20 segundos."
+  },
+  {
+    "id": 35,
+    "name": "Alongamento de Glúteo Sentado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Comece sentado no chão com as pernas estendidas. Traga seu joelho direito para cima e sobre a perna esquerda de modo que seu pé direito esteja no chão. Mantenha a perna esquerda estendida. Segure seu joelho direito com ambas as mãos e puxe-o em direção ao seu peito. Mantenha o alongamento por 30 segundos. Repita com a perna oposta."
+  },
+  {
+    "id": 36,
+    "name": "Balanço de Perna em Pé",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique ao lado de uma cadeira ou outro suporte, segurando-o com uma mão. Balance sua perna para frente, mantendo-a reta. Continue com um balanço para baixo, levando a perna o mais para trás que sua flexibilidade permitir. Repita 5-10 vezes e depois troque de pernas."
+  },
+  {
+    "id": 37,
+    "name": "Minhoca",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Fique com os pés juntos. Mantendo as pernas retas, estique-se e coloque suas mãos no chão diretamente à sua frente. Esta será sua posição inicial. Comece caminhando lentamente com as mãos para frente, alternando a esquerda e a direita. Ao fazer isso, dobre apenas no quadril, mantendo as pernas retas. Continue até que seu corpo esteja paralelo ao chão em uma posição de flexão. Agora, mantenha suas mãos no lugar e caminhe lentamente com os pés, movendo apenas alguns centímetros por vez. Continue caminhando até que seus pés estejam perto de suas mãos, mantendo as pernas retas enquanto faz isso."
+  },
+  {
+    "id": 38,
+    "name": "Isquiotibiais Deitado",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com as pernas estendidas. Seu parceiro deve estar ajoelhado ao seu lado. Levante uma perna em direção ao teto e peça ao seu parceiro para segurar o tornozelo. Seu parceiro pode usar o ombro para apoiar sua perna, se necessário. Esta será sua posição inicial. Peça ao seu parceiro para empurrar sua perna em direção ao seu peito apenas o suficiente para que você sinta um desconforto leve. Mantenha o alongamento por 10 segundos. Após 10 segundos, ativamente empurre contra a resistência do seu parceiro por 6 segundos. Em seguida, relaxe sua perna, permitindo que seu parceiro gentilmente empurre a perna em direção à sua cabeça. Certifique-se de informar seu ajudante quando o alongamento for adequado para prevenir lesões ou alongamento excessivo. Troque de lado ao completar."
+  },
+  {
+    "id": 39,
+    "name": "Alongamento dos Isquiotibiais Deitado com Banda",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas com uma perna estendida acima de você, com o quadril a noventa graus. Mantenha a outra perna reta no chão. Passe um cinto, faixa ou corda sobre o peito do pé. Esta será sua posição inicial. Puxe o cinto para criar tensão nas panturrilhas e isquiotibiais. Mantenha esse alongamento por 10-30 segundos e repita com a outra perna."
+  },
+  {
+    "id": 40,
+    "name": "SMR dos Isquiotibiais",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "rolo de espuma",
+    "difficulty": "beginner",
+    "instructions": "Em posição sentada, estenda suas pernas sobre um rolo de espuma de modo que ele fique posicionado na parte de trás das coxas superiores. Coloque suas mãos ao lado ou atrás de você para ajudar a suportar seu peso. Esta será sua posição inicial. Usando suas mãos, levante seus quadris do chão e transfira seu peso no rolo de espuma para uma perna. Relaxe os isquiotibiais da perna que está sendo alongada. Role sobre o rolo de espuma de abaixo do quadril até acima do joelho, pausando em pontos de tensão por 10-30 segundos. Repita para a outra perna."
+  },
+  {
+    "id": 41,
+    "name": "Pega na Perna com Costas Superiores",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Sentado, incline-se para a frente para abraçar suas coxas por baixo com ambos os braços. Mantenha seus joelhos juntos e suas pernas estendidas enquanto traz seu peito para seus joelhos. Você também pode alongar suas costas médias puxando suas costas para longe de seus joelhos enquanto os abraça."
+  },
+  {
+    "id": 42,
+    "name": "Isquiotibiais Sentado",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Em posição sentada com as pernas estendidas, peça ao seu parceiro para ficar atrás de você. Agora, incline-se para a frente enquanto seu parceiro segura seus ombros com as mãos. Esta será sua posição inicial. Tente empurrar seu tronco para trás por 10-20 segundos, enquanto seu parceiro impede qualquer movimento real do seu tronco. Agora relaxe seus músculos enquanto seu parceiro aumenta o alongamento, empurrando gentilmente seu tronco para a frente por 10-20 segundos."
+  },
+  {
+    "id": 43,
+    "name": "90/90 dos Isquiotibiais",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de costas, com uma perna estendida reta. Com a outra perna, dobre o quadril e o joelho a 90 graus. Você pode apoiar sua perna com as mãos, se necessário. Esta será sua posição inicial. Estenda sua perna para o ar, pausando brevemente no topo. Retorne a perna à posição inicial. Repita por 10-20 repetições e depois mude para a outra perna."
+  },
+  {
+    "id": 44,
+    "name": "Lunge Alternado com Salto",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Comece em posição de pé. Pule para uma posição de pernas divididas, com uma perna à frente e a outra atrás, flexionando os joelhos e abaixando ligeiramente seus quadris ao fazê-lo. Ao descer, imediatamente inverta a direção, levantando-se e pulando, trocando a posição das pernas. Repita 5-10 vezes em cada perna."
+  },
+  {
+    "id": 45,
+    "name": "Alongamento da Perna Estendida na Cadeira",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Sente-se ereto em uma cadeira e segure a base do assento dos lados. Eleve uma perna, estendendo o joelho e flexionando o tornozelo ao fazer isso. Lentamente mova essa perna para fora o máximo que conseguir, e depois volte ao centro e para baixo. Repita para a outra perna."
+  },
+  {
+    "id": 46,
+    "name": "Alongamento Dinâmico das Costas",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique de pé com os pés afastados na largura dos ombros. Esta será sua posição inicial. Mantendo os braços retos, balance-os para cima na sua frente de 5 a 10 vezes, aumentando a amplitude do movimento cada vez até que seus braços estejam acima da cabeça."
+  },
+  {
+    "id": 47,
+    "name": "Alongamento Inferior das Costas na Cadeira",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Sente-se ereto em uma cadeira. Dobre-se para um lado com seu braço sobre sua cabeça. Você pode segurar na cadeira com sua mão livre. Mantenha por 10 segundos e repita para o outro lado."
+  },
+  {
+    "id": 48,
+    "name": "Alongamento Lateral Deitado no Chão",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Primeiro deite-se sobre o seu lado esquerdo, dobrando o joelho esquerdo na sua frente para estabilizar seu tronco (use seus músculos abdominais também para manter-se ereto). Estique a perna direita e descanse o pé direito no chão atrás do esquerdo. Estique o braço direito sobre sua cabeça e puxe gentilmente o seu pulso direito para alongar todo o lado direito do corpo. Troque de lado."
+  },
+  {
+    "id": 49,
+    "name": "Latissimus Dorsi com Braço Elevado",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Sente-se ereto no chão com seu parceiro atrás de você. Levante um braço para cima e flexione o cotovelo, tentando tocar sua mão nas costas. Seu parceiro deve segurar seu tríceps e pulso. Esta será sua posição inicial. Tente puxar seu braço superior para o lado enquanto seu parceiro impede que você faça isso. Após 10-20 segundos, relaxe o braço e permita que seu parceiro estenda mais o latíssimo do dorso aplicando pressão suave no tríceps. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 50,
+    "name": "Alongamento do Dançarino",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Sente-se no chão. Cruze sua perna direita sobre a esquerda, mantendo o joelho dobrado. Sua perna esquerda está reta e no chão. Coloque seu braço esquerdo sobre a perna direita e sua mão direita no chão. Rode seu tronco para a direita e mantenha por 10-20 segundos. Troque de lado."
+  },
+  {
+    "id": 51,
+    "name": "Alongamento do Gato",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Posicione-se no chão de mãos e joelhos. Puxe sua barriga para dentro e arredonde sua coluna, lombar, ombros e pescoço, deixando sua cabeça cair. Mantenha por 15 segundos."
+  },
+  {
+    "id": 52,
+    "name": "Avanço Reverso Cruzado",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique de pé com os pés afastados na largura dos ombros. Esta será sua posição inicial. Realize um avanço para trás, dando um passo para trás com um pé e flexionando os quadris e o joelho da frente. Ao fazer isso, rotacione seu tronco sobre a perna da frente. Após uma breve pausa, retorne à posição inicial e repita no outro lado, continuando de forma alternada."
+  },
+  {
+    "id": 53,
+    "name": "Inclinação Pélvica em Pé",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Comece com os pés afastados na distância dos quadris. Dobre levemente os joelhos para mantê-los flexíveis. Você pode querer mover sua pélvis para frente e para trás algumas vezes antes de segurar o cóccix para frente neste alongamento."
+  },
+  {
+    "id": 54,
+    "name": "Alongamento Intermediário do Flexor do Quadril e Quadríceps",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "outro",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de bruços no chão, com uma corda, cinto ou faixa envolvida em um pé. Flexione o joelho e estenda o quadril da perna a ser alongada, usando as duas mãos para puxar o cinto. Seu joelho e seu quadril devem sair do chão, criando tensão nos flexores do quadril e nos quadríceps. Mantenha o alongamento por 10-20 segundos e repita com a outra perna."
+  },
+  {
+    "id": 55,
+    "name": "Agachamentos Sentados",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique de pé com os pés afastados na largura dos ombros. Esta será sua posição inicial. Comece o movimento flexionando os joelhos e quadris, sentando-se para trás com seus quadris. Continue até ter agachado parte do caminho para baixo, mas acima do paralelo, e rapidamente reverta o movimento até retornar à posição inicial. Repita por 5-10 repetições."
+  },
+  {
+    "id": 56,
+    "name": "Alongamento dos Quadríceps em Quatro Apoios",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Comece em suas mãos e joelhos, em seguida, levante a perna do chão e segure o pé com a sua mão. Use sua mão para segurar o pé ou tornozelo, mantendo o joelho totalmente flexionado, alongando os quadríceps e flexores do quadril. Foque em estender seus quadris, empurrando-os em direção ao chão. Mantenha por 10-20 segundos e então troque de lado."
+  },
+  {
+    "id": 57,
+    "name": "Saltos de Sapo",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "nenhum",
+    "difficulty": "beginner",
+    "instructions": "Fique de pé com as mãos atrás da cabeça e agache-se mantendo o tronco ereto e a cabeça erguida. Esta será sua posição inicial. Pule para frente vários pés, evitando pular desnecessariamente alto. Ao seus pés tocarem o chão, absorva o impacto pelas pernas e pule novamente. Repita esta ação 5-10 vezes."
+  },
+  {
+    "id": 58,
+    "name": "Elevação da Perna Traseira",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Posicione-se de mãos e joelhos em um tapete de exercícios. Sua cabeça deve estar olhando para frente e a dobra dos joelhos deve criar um ângulo de 90 graus entre os isquiotibiais e as panturrilhas. Esta será sua posição inicial. Estenda uma perna para cima e para trás. O joelho e o quadril devem ambos estender. Repita por 5-10 repetições e depois troque de lado."
+  },
+  {
+    "id": 59,
+    "name": "Quadríceps Deitado de Bruços",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Deite-se de bruços no chão com seu parceiro ajoelhado ao seu lado. Flexione um joelho e levante essa perna do chão, tentando tocar suas nádegas com o pé. Peça ao seu parceiro para ajoelhar-se ao seu lado direito e colocar uma mão nas suas costas ou nádegas. A outra mão dele(a) deve segurar seu tornozelo ou joelho e empurrar sua canela em direção às suas nádegas. Você deve sentir um alongamento nos quadríceps. Após 10 segundos, tente empurrar o pé de volta ao chão contra a resistência do seu parceiro e segure por 6 segundos. Após essa contração de 6 segundos, relaxe e permita que seu parceiro alongue mais seus quadríceps por outros 30 segundos. (Se desejar, tente contrair seus isquiotibiais para maiores ganhos de ROM.) Repita com a outra perna."
+  },
+  {
+    "id": 60,
+    "name": "Tríceps Sobre a Cabeça",
+    "type": "alongamento",
+    "muscle": "tríceps",
+    "equipment": "somente corpo",
+    "difficulty": "beginner",
+    "instructions": "Sente-se ereto no chão com seu parceiro atrás de você. Levante um braço reto para cima e flexione o cotovelo, tentando tocar sua mão nas suas costas. Seu parceiro deve segurar seu cotovelo e pulso. Esta será sua posição inicial. Tente estender o braço para o alto enquanto seu parceiro impede que você realmente faça isso. Após 10-20 segundos, relaxe o braço e permita que seu parceiro alongue mais o tríceps aplicando pressão suave no pulso. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 61,
+    "name": "Chute Tesoura",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Para começar, deite-se com as costas pressionadas contra o chão ou em um tapete de exercícios (opcional). Seus braços devem estar totalmente estendidos para os lados com as palmas viradas para baixo. Observação: Os braços devem permanecer estacionários o tempo todo. Com uma leve dobra nos joelhos, levante as pernas para que seus calcanhares fiquem a cerca de 15 centímetros do chão. Esta é a posição inicial. Agora levante sua perna esquerda até cerca de um ângulo de 45 graus enquanto a perna direita é abaixada até que o calcanhar fique a cerca de 5-7 centímetros do chão. Alterne os movimentos elevando a perna direita e abaixando a esquerda. Lembre-se de respirar enquanto realiza este exercício. Repita pela quantidade recomendada de repetições. Variação: À medida que avança, você pode usar tornozeleiras para resistência."
+  },
+  {
+    "id": 62,
+    "name": "Toque de Dedos do Pé",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Para começar, deite-se no chão ou em um tapete de exercícios com as costas pressionadas contra o chão. Seus braços devem estar ao lado do corpo com as palmas viradas para baixo. Suas pernas devem estar tocando uma na outra. Lentamente, eleve suas pernas para o ar até que estejam quase perpendiculares ao chão com uma leve dobra nos joelhos. Seus pés devem estar paralelos ao chão. Mova seus braços para que estejam totalmente estendidos em um ângulo de 45 graus em relação ao chão. Esta é a posição inicial. Mantendo a parte inferior das costas pressionada contra o chão, levante lentamente o torso e use as mãos para tentar tocar seus dedos do pé. Lembre-se de expirar enquanto realiza esta parte do exercício. Comece lentamente a abaixar o torso e os braços de volta à posição inicial enquanto inspira. Lembre-se de manter os braços estendidos em direção aos seus dedos do pé. Repita pela quantidade recomendada de repetições."
+  },
+  {
+    "id": 63,
+    "name": "Curl Lombar",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de barriga para baixo com os braços estendidos para os lados. Esta será sua posição inicial. Usando os músculos da parte inferior das costas, estenda a coluna levantando o peito do chão. Não use os braços para se empurrar. Mantenha a cabeça erguida durante o movimento. Repita por 10-20 repetições."
+  },
+  {
+    "id": 64,
+    "name": "Rotação do Torso com Bola de Exercício",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique de pé ereto segurando uma bola de exercício com as duas mãos. Estenda os braços para que a bola fique reta à sua frente. Esta será sua posição inicial. Rotacione seu torso para um lado, mantendo os olhos na bola enquanto se move. Agora, rotacione de volta para a direção oposta. Repita por 10-20 repetições."
+  },
+  {
+    "id": 65,
+    "name": "Alongamento Overhead Sentado",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se ereto em um tapete de exercícios. Toque as solas dos seus pés juntas com seus pés a seis a oito centímetros à frente dos seus quadris. Coloque uma mão no chão ao seu lado e a outra mão atrás da sua cabeça. Levante o cotovelo em direção ao teto enquanto inclina seu torso para o outro lado. Mantenha por 10 a 20 segundos e depois troque de lado."
+  },
+  {
+    "id": 66,
+    "name": "Alongamento Overhead",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Ficando de pé ereto, entrelace os dedos e abra as palmas das mãos para o teto. Mantenha os ombros baixos enquanto estende os braços para cima. Para criar um alongamento completo do torso, puxe o cóccix para baixo e estabilize seu torso enquanto faz isso. Alongue os músculos tanto na frente quanto nas costas do torso."
+  },
+  {
+    "id": 67,
+    "name": "Alcance de Um Braço no Caranguejo",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece em posição de caranguejo, com as mãos e os pés no chão e o abdômen voltado para cima. Levante uma mão do chão e estenda-a, tentando alcançar o mais longe possível, enquanto mantém o equilíbrio com o resto do corpo. Segure a posição por alguns segundos, depois troque de braço e repita o movimento. Esse exercício ajuda a esticar os abdominais, bem como a melhorar o equilíbrio e a flexibilidade corporal."
+  },
+  {
+    "id": 68,
+    "name": "Meio Bird Dog",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "A instrução específica para este exercício não foi fornecida. Geralmente, o exercício Bird Dog envolve posicionar-se de quatro no chão e, então, estender um braço e a perna oposta simultaneamente, mantendo o equilíbrio e a estabilidade do corpo. O 'Meio Bird Dog' poderia envolver uma variação focada em menos membros simultaneamente."
+  },
+  {
+    "id": 69,
+    "name": "Bench 300 Band Pull Apart",
+    "type": "alongamento",
+    "muscle": "abdominais",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "A instrução específica para este exercício não foi fornecida. Normalmente, 'Band Pull Aparts' são realizados em pé, segurando uma banda de resistência com ambas as mãos na frente do corpo e, em seguida, puxando a banda em direção ao peito, estendendo os braços lateralmente. Este exercício foca na parte superior das costas e nos ombros, mas pode ser adaptado para focar nos abdominais."
+  },
+  {
+    "id": 70,
+    "name": "Círculos de Quadril (Deitado)",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "Posicione-se de mãos e joelhos no chão. Mantendo uma boa postura, levante um joelho dobrado do chão. Esta será sua posição inicial. Mantendo o joelho na posição dobrada, gire o fêmur em um arco, tentando fazer um grande círculo com o joelho. Realize isso lentamente por várias repetições e repita do outro lado."
+  },
+  {
+    "id": 71,
+    "name": "SMR da Banda Iliotibial",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "rolo de espuma",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de lado, com a perna de baixo colocada em um rolo de espuma entre o quadril e o joelho. A outra perna pode ser cruzada na sua frente. Coloque tanto peso quanto for tolerável na sua perna de baixo; não há necessidade de manter a perna de baixo em contato com o chão. Certifique-se de relaxar os músculos da perna que você está alongando. Role sua perna sobre o rolo de espuma do quadril até o joelho, pausando por 10-30 segundos em pontos de tensão. Repita com a perna oposta."
+  },
+  {
+    "id": 72,
+    "name": "Moinhos de Vento",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de costas com os braços estendidos para os lados e as pernas esticadas. Esta será sua posição inicial. Levante uma perna e cruze-a rapidamente sobre o corpo, tentando tocar o chão perto da mão oposta. Volte à posição inicial e repita com a perna oposta. Continue alternando por 10-20 repetições."
+  },
+  {
+    "id": 73,
+    "name": "Alongamento da Banda Iliotibial e Glúteo",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Passe um cinto, corda ou faixa ao redor de um dos seus pés e balance essa perna através do corpo para o lado oposto, mantendo a perna estendida enquanto você deita no chão. Esta será sua posição inicial. Mantendo o pé fora do chão, puxe o cinto, usando a tensão para puxar os dedos para cima. Mantenha por 10-20 segundos e repita do outro lado."
+  },
+  {
+    "id": 74,
+    "name": "Círculo de Quadril em Pé",
+    "type": "alongamento",
+    "muscle": "abdutores",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Apoie-se a alguns passos de distância de um objeto firme e fique em um pé só, com o joelho levemente dobrado e inclinado para frente. Ficando em uma perna, levante-se na ponta dos pés enquanto mantém o outro pé fora do chão. Esta será sua posição inicial. Em um movimento circular, gire toda a perna para frente e para trás por várias repetições para soltar os quadris. Mantenha seu pé fora do chão o tempo todo. Repita para o lado oposto."
+  },
+  {
+    "id": 75,
+    "name": "Alongamento de Virilha Deitado de Lado",
+    "type": "alongamento",
+    "muscle": "adutores",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece deitando-se sobre o lado direito e dobre o joelho direito na sua frente para estabilizar o tronco. Descanse sua cabeça na sua mão ou ombro direito. Levante a perna esquerda para cima e segure-a pela parte de trás do joelho (mais fácil) ou pelo pé (mais difícil). Puxe seu joelho esquerdo em direção ao ombro esquerdo e simultaneamente pressione o pé ou joelho para baixo em direção ao chão. Para intensificar esse alongamento, estique a perna esquerda. Troque de lado."
+  },
+  {
+    "id": 76,
+    "name": "SMR dos Peroneais",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de lado, apoiando seu peso no antebraço e em um rolo de espuma colocado na parte externa da perna inferior. Sua perna superior pode estar em cima da perna inferior, ou você pode cruzá-la na sua frente. Esta será sua posição inicial. Levante seus quadris do chão e comece a rolar de abaixo do joelho até acima do tornozelo na lateral da sua perna, pausando em pontos de tensão por 10-30 segundos. Repita na outra perna."
+  },
+  {
+    "id": 77,
+    "name": "Alongamento do Gastrocnêmio em Pé",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Coloque seu calcanhar direito em um degrau com o joelho estendido e incline-se para a frente para pegar o dedão do pé direito com a mão direita. O joelho esquerdo deve estar levemente dobrado e suas costas devem estar retas. Apoie seu peso na perna esquerda e coloque a mão esquerda na coxa esquerda. Puxe os dedos do pé direito em direção ao joelho até sentir um alongamento na panturrilha."
+  },
+  {
+    "id": 78,
+    "name": "Alongamento de Panturrilha na Parede",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique de frente para uma parede a alguns passos de distância. Coloque um pé à frente, em uma posição escalonada. Incline-se para a frente e apoie suas mãos na parede, mantendo o calcanhar, o quadril e a cabeça em linha reta. Tente manter o calcanhar no chão. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 79,
+    "name": "Alongamento de Panturrilha Sentado",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se ereto em um tapete de exercício. Dobre um joelho e coloque esse pé no chão para estabilizar o tronco. Estique a outra perna e flexione o tornozelo. Usando uma faixa, toalha ou sua mão, se conseguir alcançar, puxe os dedos em sua direção. Mantenha por 10 a 20 segundos, depois troque de lado."
+  },
+  {
+    "id": 80,
+    "name": "Alongamento dos Peroneais",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "bandas",
+    "difficulty": "intermediate",
+    "instructions": "Em posição sentada, passe uma cinta, corda ou banda ao redor de um pé. Esta será sua posição inicial. Com a perna estendida e o calcanhar fora do chão, puxe a cinta de modo que o pé seja invertido, com a parte interna do pé sendo puxada em sua direção. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 81,
+    "name": "Alongamento do Tibial Posterior",
+    "type": "alongamento",
+    "muscle": "panturrilhas",
+    "equipment": "bandas",
+    "difficulty": "intermediate",
+    "instructions": "Em posição sentada, passe uma cinta, corda ou banda ao redor de um pé. Esta será sua posição inicial. Com a perna estendida e o calcanhar fora do chão, puxe a cinta de modo que o pé seja evertido, com a parte externa do pé sendo puxada em sua direção. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 82,
+    "name": "Alongamento Dinâmico do Peito",
+    "type": "alongamento",
+    "muscle": "peito",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "Fique de pé com as mãos juntas, braços estendidos diretamente à sua frente. Esta será sua posição inicial. Mantendo os braços retos, mova seus braços rapidamente para trás o máximo possível e de volta novamente, semelhante a um movimento de palmas exagerado. Repita 5-10 vezes, aumentando a velocidade à medida que faz isso."
+  },
+  {
+    "id": 83,
+    "name": "SMR do Piriforme",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "rolo de espuma",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se com seus glúteos em cima de um rolo de espuma. Dobre os joelhos e cruze uma perna de modo que o tornozelo fique sobre o joelho. Esta será sua posição inicial. Transfira seu peso para o lado da perna cruzada, rolando sobre os glúteos até sentir tensão no glúteo superior. Você pode ajudar o alongamento puxando o joelho dobrado em direção ao peito com uma mão. Mantenha esta posição por 10-30 segundos e depois troque de lado."
+  },
+  {
+    "id": 84,
+    "name": "Alongamento de Glúteo Deitado",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "De uma posição deitada, dobre os joelhos e mantenha os pés no chão. Coloque o tornozelo de um pé sobre o joelho oposto. Segure a coxa ou o joelho da perna inferior e puxe ambas as pernas em direção ao peito. Relaxe o pescoço e os ombros. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 85,
+    "name": "Joelho Através do Corpo",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se no chão com a perna direita estendida. Dobre a perna esquerda e abaixe-a através do corpo, segurando o joelho em direção ao chão com a mão direita. (O joelho não precisa tocar o chão se você estiver rígido.) Coloque seu braço esquerdo confortavelmente ao seu lado e vire sua cabeça para a esquerda. Imagine que há um peso amarrado ao seu cóccix. Deixe seu cóccix cair de volta em direção ao chão enquanto seu peito se estende na direção oposta para alongar a parte inferior das costas. Troque de lado."
+  },
+  {
+    "id": 86,
+    "name": "Um Joelho no Peito",
+    "type": "alongamento",
+    "muscle": "glúteos",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece deitado no chão. Estenda uma perna reta e puxe o outro joelho em direção ao peito. Segure abaixo da articulação do joelho para proteger a rótula. Puxe gentilmente esse joelho em direção ao seu nariz. Troque de lado. Isso alonga os glúteos e a parte inferior das costas da perna dobrada e o flexor do quadril da perna reta."
+  },
+  {
+    "id": 87,
+    "name": "Alongamento dos Isquiotibiais com Perna Elevada",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de costas, dobre um joelho e coloque o pé desse lado no chão para estabilizar sua coluna. Estenda a outra perna para o ar. Se estiver difícil, talvez você não consiga estender completamente. Tudo bem. Estenda o joelho de modo que a sola do pé elevado fique voltada para o teto (ou o mais próximo que conseguir). Lentamente estenda as pernas o máximo possível e puxe a perna em direção ao seu nariz. Troque de lado."
+  },
+  {
+    "id": 88,
+    "name": "Toques dos Dedos dos Pés em Pé",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com algum espaço à sua frente e atrás de você. Dobre-se na cintura, mantendo as pernas retas, até conseguir relaxar e deixar o corpo superior pendurado à sua frente. Deixe os braços e as mãos pendurados naturalmente. Mantenha por 10 a 20 segundos."
+  },
+  {
+    "id": 89,
+    "name": "Alongamento da Virilha Deitado com Banda",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de costas com as pernas estendidas. Passe uma cinta, corda ou banda ao redor de um dos seus pés e balance essa perna para o lado o máximo que puder. Esta será sua posição inicial. Puxe suavemente a cinta para criar tensão na virilha e nos isquiotibiais. Mantenha por 10-20 segundos e repita do outro lado."
+  },
+  {
+    "id": 90,
+    "name": "Alongamento de Isquiotibiais e Panturrilha em Pé",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "bandas",
+    "difficulty": "intermediate",
+    "instructions": "Comece passando uma cinta, banda ou corda ao redor de um pé. Enquanto estiver em pé, coloque esse pé à frente. Dobre a perna de trás, mantendo a da frente reta. Agora, levante os dedos do pé da frente do chão e incline-se para a frente. Usando a cinta, puxe a parte superior do pé para aumentar o alongamento na panturrilha. Mantenha por 10-20 segundos e repita com o outro pé."
+  },
+  {
+    "id": 91,
+    "name": "Alongamento de Isquiotibiais Sentado no Chão",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se em um tapete com a perna direita estendida à sua frente e a perna esquerda dobrada com o pé contra a coxa interna direita. Incline-se para a frente a partir dos quadris e alcance seu tornozelo até sentir um alongamento nos isquiotibiais. Mantenha por 15 segundos e depois repita para o outro lado."
+  },
+  {
+    "id": 92,
+    "name": "O Melhor Alongamento do Mundo",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Este é um alongamento em três partes. Comece avançando uma perna, com o pé da frente no chão e na ponta do pé de trás. Com os joelhos dobrados, agache até que seu joelho esteja quase tocando o chão. Mantenha o tronco ereto e segure essa posição por 10-20 segundos. Agora, coloque o braço do mesmo lado da perna da frente no chão, com o cotovelo ao lado do pé. A outra mão deve ser colocada no chão, paralela à sua perna da frente, para ajudar a apoiar você durante esta parte do alongamento. Após 10-20 segundos, coloque as mãos em ambos os lados do seu pé da frente. Levante os dedos do pé da frente do chão e estique a perna. Pode ser necessário reposicionar a perna de trás para fazer isso. Mantenha por 10-20 segundos e depois repita toda a sequência para o outro lado."
+  },
+  {
+    "id": 93,
+    "name": "O Espacate",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece em uma posição sentada e ereta. Inicie estendendo suas pernas à sua frente em um V. Com as mãos no chão, incline-se para a frente o máximo possível. Mantenha por 10 a 20 segundos."
+  },
+  {
+    "id": 94,
+    "name": "Alongamento do Corredor",
+    "type": "alongamento",
+    "muscle": "isquiotibiais",
+    "equipment": "nenhum",
+    "difficulty": "intermediate",
+    "instructions": "É mais fácil iniciar este alongamento de pé, colocando uma perna atrás de você e abaixando lentamente seu tronco até o chão. Mantenha o calcanhar da frente no chão (se levantar, afaste mais a outra perna). Coloque suas mãos em cada lado da perna da frente. Para intensificar este alongamento, empurre seu bumbum em direção ao teto e, em seguida, abaixe-o gradualmente de volta ao chão. Isso alongará o flexor do quadril da perna de trás e os isquiotibiais e glúteos da frente."
+  },
+  {
+    "id": 95,
+    "name": "Um Braço Contra a Parede",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "De pé, coloque um braço dobrado contra uma parede ou batente de porta. Incline-se lentamente em direção ao seu braço até sentir um alongamento nos dorsais."
+  },
+  {
+    "id": 96,
+    "name": "SMR dos Dorsais",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "rolo de espuma",
+    "difficulty": "intermediate",
+    "instructions": "Deitado no chão, coloque um rolo de espuma sob suas costas e para um lado, logo atrás da axila. Esta será sua posição inicial. Mantenha o braço do lado que está sendo alongado para trás e ao lado de você enquanto transfere seu peso para os dorsais, mantendo a parte superior do corpo fora do chão. Mantenha por 10-30 segundos e troque de lado."
+  },
+  {
+    "id": 97,
+    "name": "Pendurada com Uma Mão",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Agarre-se a uma barra de chinup com uma mão, usando uma pegada pronada. Mantenha seus pés no chão ou em um degrau. Permita que a maior parte do seu peso fique pendurada nessa mão, mantendo os pés no chão. Mantenha por 10-20 segundos e troque de lado."
+  },
+  {
+    "id": 98,
+    "name": "Alongamento Lateral em Pé",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em uma posição ligeiramente mais larga que a distância dos quadris com os joelhos levemente dobrados. Coloque sua mão direita no quadril direito para apoiar a coluna. Levante seu braço esquerdo em linha vertical e coloque sua mão esquerda atrás da cabeça. Mantenha-a lá enquanto inclina seu tronco para a direita. Mantenha seu peso distribuído igualmente entre as duas pernas (não incline para o seu quadril esquerdo). Troque de lado."
+  },
+  {
+    "id": 99,
+    "name": "Alongamento Lateral em Pé",
+    "type": "alongamento",
+    "muscle": "dorsais",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com uma distância um pouco maior que a largura dos quadris entre os pés e os joelhos levemente dobrados. Coloque sua mão direita no quadril direito para apoiar a coluna. Levante o braço esquerdo em linha reta e coloque sua mão esquerda atrás da cabeça. Mantenha-a ali enquanto inclina seu tronco para a direita. Mantenha seu peso distribuído uniformemente entre as duas pernas (não se incline para o quadril esquerdo). Troque de lado."
+  },
+  {
+    "id": 100,
+    "name": "Superman",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Para começar, deite-se reto e de bruços no chão ou tapete de exercícios. Seus braços devem estar totalmente estendidos à sua frente. Esta é a posição inicial. Simultaneamente, levante seus braços, pernas e peito do chão e mantenha essa contração por 2 segundos. Dica: Aperte sua lombar para obter os melhores resultados deste exercício. Lembre-se de exalar durante este movimento. Nota: Ao segurar a posição contratada, você deve parecer com o super-homem quando ele está voando. Lentamente comece a abaixar seus braços, pernas e peito de volta para a posição inicial enquanto inala. Repita pela quantidade recomendada de repetições prescritas em seu programa. Variações: Você também pode realizar este exercício usando um braço e perna de cada vez, elevando seu braço esquerdo, perna e lado do peito e fazer o mesmo com o lado direito."
+  },
+  {
+    "id": 101,
+    "name": "Abraço na Bola",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se no chão. Abra as pernas e coloque uma bola de exercícios entre elas, abaixando seus quadris em direção ao chão. Abraçe seus braços ao redor da bola para apoiar seu corpo. Ajuste suas pernas para que seus pés fiquem no chão e seus joelhos alinhados sobre seus tornozelos. Mantenha um bom apoio na bola para que ela não role para longe de você e te faça cair."
+  },
+  {
+    "id": 102,
+    "name": "Pose da Criança",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique de quatro, caminhe com as mãos à sua frente. Abaixe seus glúteos para sentar sobre seus calcanhares. Deixe seus braços arrastarem pelo chão conforme você se senta para trás esticando toda a sua coluna. Uma vez acomodado sobre seus calcanhares, traga suas mãos ao lado dos seus pés e relaxe. \"Respire\" dentro de suas costas. Descanse sua testa no chão. Evite esta posição se você tem problemas nos joelhos."
+  },
+  {
+    "id": 103,
+    "name": "Inclinação Pélvica Para Ponte",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se com os pés no chão, calcanhares diretamente sob seus joelhos. Levante apenas seu cóccix em direção ao teto para alongar sua lombar. (Não levante a coluna inteira ainda.) Puxe seu estômago. Para ir para uma ponte, levante toda a coluna, exceto o pescoço."
+  },
+  {
+    "id": 104,
+    "name": "SMR Lombar",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "rolo de espuma",
+    "difficulty": "intermediate",
+    "instructions": "Em posição sentada, coloque um rolo de espuma sob sua lombar. Cruze seus braços à sua frente e protraia seus ombros. Esta será sua posição inicial. Eleve seus quadris do chão e incline-se para trás, mantendo seu peso sobre a lombar. Agora desloque seu peso levemente para um lado, mantendo o peso fora da coluna e sobre os músculos ao lado dela. Role sobre a sua lombar, parando em pontos de tensão por 10-30 segundos. Repita do outro lado."
+  },
+  {
+    "id": 105,
+    "name": "Abraço dos Joelhos ao Peito",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de costas e puxe ambos os joelhos em direção ao peito. Segure seus braços sob os joelhos, não por cima (isso colocaria muita pressão nas articulações do joelho). Lentamente, puxe os joelhos em direção aos seus ombros. Isso também alonga os músculos dos glúteos."
+  },
+  {
+    "id": 106,
+    "name": "Pirâmide",
+    "type": "alongamento",
+    "muscle": "lombar",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece rolando seu tronco para frente sobre a bola de forma que seus quadris repousem em cima da bola e se tornem o ponto mais alto do seu corpo. Descanse suas mãos e pés no chão. Seus braços e pernas podem estar levemente dobrados ou retos, dependendo do tamanho da bola, da sua flexibilidade e do comprimento dos seus membros. Isso também ajuda a desenvolver força estabilizadora no seu tronco e ombros."
+  },
+  {
+    "id": 107,
+    "name": "SMR dos Romboides",
+    "type": "alongamento",
+    "muscle": "costas médias",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se com as costas no chão. Coloque um rolo de espuma embaixo da sua parte superior das costas e cruze os braços à sua frente, protrair os ombros. Esta será sua posição inicial. Eleve seus quadris do chão, colocando seu peso sobre o rolo de espuma. Desloque seu peso para um lado de cada vez, rolando sobre suas costas médias e superiores. Pause em pontos de tensão por 10-30 segundos."
+  },
+  {
+    "id": 108,
+    "name": "Alongamento da Coluna",
+    "type": "alongamento",
+    "muscle": "costas médias",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se em uma cadeira de forma que suas costas estejam retas e seus pés plantados no chão. Entrelace seus dedos atrás da sua cabeça, cotovelos para fora e queixo para baixo. Torça seu corpo superior para um lado cerca de 3 vezes o máximo que puder. Depois, incline-se para frente e torça seu tronco para alcançar seu cotovelo ao chão no interior do seu joelho. Retorne à posição ereta e repita para o outro lado."
+  },
+  {
+    "id": 109,
+    "name": "Alongamento das Costas Superiores",
+    "type": "alongamento",
+    "muscle": "costas médias",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Una os dedos com os polegares apontando para baixo, curve os ombros enquanto estende as mãos para frente."
+  },
+  {
+    "id": 110,
+    "name": "Alongamento das Costas Médias",
+    "type": "alongamento",
+    "muscle": "costas médias",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique de pé com os pés na largura dos ombros e as mãos nos quadris. Torça na sua cintura até sentir um alongamento. Mantenha por 10 a 15 segundos e torça para o outro lado."
+  },
+  {
+    "id": 111,
+    "name": "Alongamento Lateral do Pescoço",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece com os ombros relaxados, incline sua cabeça suavemente em direção ao seu ombro. Auxilie o alongamento com um puxão gentil no lado da cabeça."
+  },
+  {
+    "id": 112,
+    "name": "Alongamento de Queixo ao Peito",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "Nenhum",
+    "difficulty": "intermediate",
+    "instructions": "Sente-se no chão. Coloque ambas as mãos na parte de trás da sua cabeça, dedos entrelaçados, polegares apontando para baixo e cotovelos apontando diretamente à frente. Puxe lentamente sua cabeça para baixo em direção ao seu peito. Mantenha por 20-30 segundos."
+  },
+  {
+    "id": 113,
+    "name": "SMR para o Pescoço",
+    "type": "alongamento",
+    "muscle": "pescoço",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Usando um rolo de massagem muscular ou um rolo de abrir massa, coloque o rolo atrás de sua cabeça e contra o seu pescoço. Certifique-se de não colocar o rolo diretamente contra a coluna, mas ligeiramente inclinado de modo que o rolo pressione contra os músculos de cada lado da coluna. Esta será sua posição inicial. Começando no topo do seu pescoço, role lentamente pelos músculos do seu pescoço, pausando em pontos de tensão por 10-30 segundos."
+  },
+  {
+    "id": 114,
+    "name": "Alongamento do Flexor do Quadril Ajoelhado",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Ajoelhe-se em um tapete e levante seu joelho direito de forma que a parte inferior do seu pé fique no chão e estenda a perna esquerda atrás de você de modo que o topo do seu pé fique no chão. Desloque seu peso para frente até sentir um alongamento no quadril. Mantenha por 15 segundos, depois repita para o outro lado."
+  },
+  {
+    "id": 115,
+    "name": "SMR para os Quadríceps",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "rolo de espuma",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de bruços no chão com o peso apoiado pelas suas mãos ou antebraços. Coloque um rolo de espuma sob uma perna nos quadríceps, mantendo o pé fora do chão. Certifique-se de relaxar a perna tanto quanto possível. Esta será sua posição inicial. Deslocando o máximo de peso para a perna que está sendo alongada conforme for tolerável, role sobre o rolo de espuma de cima do joelho até abaixo do quadril, pausando em pontos de tensão por 10-30 segundos. Troque de lado."
+  },
+  {
+    "id": 116,
+    "name": "Cruzes de Ferro (alongamento)",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de bruços no chão, com os braços estendidos para o lado, palmas pressionadas contra o chão. Esta será sua posição inicial. Para começar, flexione um joelho e traga essa perna através do corpo, tentando tocá-la no chão perto da mão oposta. Retorne imediatamente a perna para a posição inicial e repita rapidamente com a outra perna. Continue alternando por 10-20 repetições."
+  },
+  {
+    "id": 117,
+    "name": "Alongamento de Quadríceps Deitado com Banda",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de lado. Passe uma cinta, corda ou banda ao redor do seu pé superior. Flexione o joelho e estenda seu quadril, tentando tocar seus glúteos com o pé, segurando a cinta com as mãos. Esta será sua posição inicial. Com a cinta sendo segurada sobre o ombro ou acima da cabeça, puxe gentilmente para aumentar o alongamento nos quadríceps. Mantenha por 10-20 segundos e depois troque de lado."
+  },
+  {
+    "id": 118,
+    "name": "Meio Gafanhoto",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se de bruços no chão. Coloque sua mão esquerda sob o osso do quadril esquerdo para proteger seu quadril e osso púbico. Dobre o joelho direito para que você possa segurar o pé com a mão direita. Levante o pé no ar e, simultaneamente, levante os ombros do chão. Isso também alonga o flexor do quadril direito e o peito e ombros. Troque de lado. Se não incomodar suas costas, você pode tentar com ambos os braços e pernas ao mesmo tempo."
+  },
+  {
+    "id": 119,
+    "name": "Flexores do Quadril em Pé",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Fique em pé com a coluna vertical, o pé esquerdo levemente à frente do direito. Dobre ambos os joelhos e levante o calcanhar de trás do chão enquanto pressiona o quadril direito para frente. No entanto, não é possível obter um alongamento profundo nesta posição, pois é difícil relaxar o flexor do quadril e ficar em pé ao mesmo tempo. Troque de lado."
+  },
+  {
+    "id": 120,
+    "name": "Olhando para o Teto",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Ajoelhe-se no chão, segurando seus calcanhares com ambas as mãos. Levante os glúteos para cima e para frente enquanto leva sua cabeça para trás para olhar para o teto, criando um arco nas costas."
+  },
+  {
+    "id": 121,
+    "name": "Alongamento de Quadríceps Deitado de Lado",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece deitando-se sobre o lado direito, com o joelho direito dobrado em um ângulo de 90 graus repousando no chão à sua frente (isso estabiliza o tronco). Dobre o joelho esquerdo atrás de você e segure o pé esquerdo com a mão esquerda. Para alongar o flexor do quadril, pressione o quadril esquerdo para frente enquanto empurra o pé esquerdo contra a mão. Troque de lado."
+  },
+  {
+    "id": 122,
+    "name": "Alongamento de Quadríceps Deitado de Costas",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Deite-se em um banco plano ou degrau, e deixe uma perna e um braço pendurados para o lado. Dobre o joelho e segure o topo do pé. Ao fazer isso, tenha cuidado para não arquear a lombar. Puxe o umbigo em direção à coluna para permanecer neutro. Pressione o pé para baixo e contra a mão. Para adicionar o alongamento do quadril, levante o quadril da perna que está segurando em direção ao teto. Troque de lado."
+  },
+  {
+    "id": 123,
+    "name": "Alongamento de Quadríceps Elevado em Pé",
+    "type": "alongamento",
+    "muscle": "quadríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Comece ficando de pé com as costas a dois ou três pés de distância de um banco ou degrau. Levante uma perna atrás de você e apoie o pé no degrau, seja no peito do pé ou na bola do pé, conforme achar mais confortável. Mantenha o joelho de apoio levemente dobrado e evite que esse joelho se estenda além dos seus dedos. Troque de lado."
+  },
+  {
+    "id": 124,
+    "name": "Alongamento Lateral do Tríceps",
+    "type": "alongamento",
+    "muscle": "tríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Leve o braço direito pelo corpo e sobre o ombro esquerdo, segurando o cotovelo com a mão esquerda, até sentir um alongamento no tríceps. Depois repita para o outro braço."
+  },
+  {
+    "id": 125,
+    "name": "Alongamento de Tríceps",
+    "type": "alongamento",
+    "muscle": "tríceps",
+    "equipment": "somente corpo",
+    "difficulty": "intermediate",
+    "instructions": "Levante a mão atrás da cabeça, segure o cotovelo e puxe gentilmente. Mantenha por 10 a 20 segundos, depois troque de lado."
+  },
+  {
+    "id": 126,
     "name": "Alongamento de quadríceps com elevação da perna",
     "type": "alongamento",
     "muscle": "quadríceps",
     "equipment": "corpo",
-    "difficulty": "advanced",
+    "difficulty": "expert",
     "instructions": "Fique em pé em uma perna e segure a outra perna atrás, puxando o calcanhar em direção às nádegas. Mantenha o tronco ereto e o abdômen contraído para manter o equilíbrio."
-  },
-  {
-    "id": 22,
-    "name": "Alongamento de isquiotibiais com rotação do quadril",
-    "type": "alongamento",
-    "muscle": "isquiotibiais",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Deite-se de costas com uma perna estendida e a outra cruzada sobre ela. Gire o quadril da perna cruzada para o lado oposto, mantendo as costas e a perna estendida no chão."
-  },
-  {
-    "id": 23,
-    "name": "Alongamento de gêmeos em parede",
-    "type": "alongamento",
-    "muscle": "gêmeos",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Fique de frente para uma parede com uma perna à frente e a outra estendida para trás. Incline o corpo para a frente, mantendo os calcanhares no chão e os joelhos retos."
-  },
-  {
-    "id": 24,
-    "name": "Alongamento de abdutores com rotação de tronco",
-    "type": "alongamento",
-    "muscle": "abdutores",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Deite-se de lado com a perna de cima reta e a de baixo dobrada. Gire o tronco para trás, elevando a perna reta para sentir o alongamento na parte interna da coxa."
-  },
-  {
-    "id": 25,
-    "name": "Alongamento de ombros com rotação de tronco",
-    "type": "alongamento",
-    "muscle": "ombros",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Em pé, estenda um braço à frente na altura do ombro. Com a outra mão, segure o cotovelo estendido e puxe-o em direção ao peito, girando o tronco na direção oposta."
-  },
-  {
-    "id": 26,
-    "name": "Alongamento de peitoral com elevação de braço",
-    "type": "alongamento",
-    "muscle": "peitoral",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Fique em pé de frente para uma parede a cerca de 30 cm de distância. Coloque uma mão na parede na altura do ombro e gire o corpo para o lado oposto, elevando o braço estendido."
-  },
-  {
-    "id": 27,
-    "name": "Alongamento de lombar com rotação e elevação",
-    "type": "alongamento",
-    "muscle": "lombar",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Deite-se de costas com os joelhos dobrados e os pés no chão. Mantenha um joelho pressionado contra o peito e o outro estendido, depois gire o quadril para o lado oposto."
-  },
-  {
-    "id": 28,
-    "name": "Alongamento de panturrilhas em parede com elevação de calcanhares",
-    "type": "alongamento",
-    "muscle": "panturrilhas",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Fique de frente para uma parede com os pés afastados. Incline o corpo para a frente, mantendo os calcanhares no chão, e eleve os calcanhares para intensificar o alongamento nas panturrilhas."
-  },
-  {
-    "id": 29,
-    "name": "Alongamento de pescoço com tração",
-    "type": "alongamento",
-    "muscle": "pescoço",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Fique em pé com a postura ereta. Incline a cabeça para um lado e use a mão do mesmo lado para aplicar uma leve tração, puxando a cabeça um pouco para intensificar o alongamento no pescoço."
-  },
-  {
-    "id": 30,
-    "name": "Alongamento de coluna com rotação profunda",
-    "type": "alongamento",
-    "muscle": "coluna",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
-  },
-  {
-    "id": 32,
-    "name": "Alongamento de coluna com rotação profunda",
-    "type": "alongamento",
-    "muscle": "coluna",
-    "equipment": "corpo",
-    "difficulty": "advanced",
-    "instructions": "Sente-se no chão com uma perna estendida e a outra dobrada com o pé do lado oposto do joelho estendido. Gire o tronco em direção ao joelho dobrado, usando o cotovelo oposto pressionado contra o joelho para intensificar a rotação."
   }
 ]
