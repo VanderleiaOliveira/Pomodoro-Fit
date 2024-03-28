@@ -306,7 +306,7 @@ async function showStretching() {
   // Atualiza o local que será exibido o alongamento e a imagem
   if (stretchingToShow) {
     document.getElementById('stretchingName').textContent =
-      'Nome:\n' + stretchingToShow.name;
+       stretchingToShow.name;
     document.getElementById('stretchingEquipment').textContent =
       'Equipamento:\n' + stretchingToShow.equipment;
     document.getElementById('stretchingMuscle').textContent =
@@ -332,7 +332,7 @@ async function showStretching() {
 
     // Atualiza o elemento de imagem com a URL correta
     const imageElement = document.getElementById('stretchingImage');
-    imageElement.innerHTML = `<img src="${imageUrl}" width="350px">`;
+    imageElement.innerHTML = `<img src="${imageUrl}>`;
 
     // Salva o ID do alongamento mostrado para não repetir
     previousStretchings.push(stretchingToShow.id);
