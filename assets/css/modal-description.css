@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Prata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*após usar https://coolors.co/  para gerar uma paleta de cores*/
+:root {
+    --blackJack: #101419;
+    --bone: #ece3d5;
+    --cornellRed: #851A1A;
+    --delftBlue: #454372;
+    --shamrockGreen: #25681D;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bone);
+}
+
+/* CSS MODAL DE DESCRIÇÃO */
+
+.logo {
+    width: 380px;
+    margin-top: 140px;
+    margin-left: 170px;
+}
+
+#exit-icon {
+    position: absolute;
+    text-decoration: none;
+    color: var(--cornellRed);
+    font-size: 33px;
+    margin-right: 50px;
+    text-shadow: 3px 3px 2.6px rgba(0, 0, 0, 0.15);
+    margin-left: 95vw;
+    margin-top: 50px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    background-color: var(--bone);
+    height: 100%;
+    width: 100%;
+    font-family: poppins;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    gap: 90px;
+}
+
+.about {
+    width: 500px;
+}
+
+.howToUse {
+    margin-top: 150px;
+    width: 610px;
+    border: solid;
+    color: var(--cornellRed);
+    border-width: 1.5px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--cornellRed);
+    margin-top: 55px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-family: prata;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+span,
+li {
+    font-size: 17px;
+    color: rgb(136, 121, 121);
+}
+
+li {
+    margin-left: 20px;
+}

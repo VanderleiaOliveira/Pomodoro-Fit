@@ -70,42 +70,6 @@ button {
 }
 
 
-.description-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   text-align: start;
-   background-color: var(--bone);
-   margin-top: 150px;
-   height: 100%;
-   width: 100%;
-   font-family: poppins;
-}
-
-.text {
-   width: 650px;
-   margin-top: 30px;
-   margin-bottom: 60px;
-}
-
-h1 {
-   color: var(--cornellRed);
-   margin-top: 60px;
-   margin-bottom: 8px;
-   font-size: 25px;
-}
-
-span, li{
-   font-size: 17px;
-   color: rgb(157, 140, 140);
-}
-
-li {
-   margin-left: 20px;
-   line-height: 30px;
-}
-
 /* Personalização da scroll  */
 body {
    overflow-x: hidden;
