@@ -332,7 +332,7 @@ async function showStretching() {
 
     // Atualiza o elemento de imagem com a URL correta
     const imageElement = document.getElementById('stretchingImage');
-    imageElement.innerHTML = `<img src="${imageUrl}>`;
+    imageElement.innerHTML = `<img src="${imageUrl}">`;
 
     // Salva o ID do alongamento mostrado para não repetir
     previousStretchings.push(stretchingToShow.id);

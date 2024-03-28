@@ -10,9 +10,9 @@
 :root {
   --blackJack: #101419;
   --bone: #ece3d5;
-  --cornellRed: #b81414;
+  --cornellRed: #851414;
   --delftBlue: #454372;
-  --shamrockGreen: #15a05f;
+  --shamrockGreen: #25681D;
 }
 
 html,
@@ -280,22 +280,6 @@ form {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Class pra usar na troca de cor de fundo (beginner/intermediate/advanced) */
-
-.fundoVerde {
-  background-color: var(--shamrockGreen);
-  /*RGB: 21, 160, 95*/
-}
-
-.fundoAzul {
-  background-color: var(--delftBlue);
-  /*RGB: 69, 67, 114*/
-}
-
-.fundoVermelho {
-  background-color: var(--cornellRed);
-  /*RGB: 184, 20, 20*/
-}
 
 .textoVerde {
   color: var(--shamrockGreen);
@@ -310,19 +294,26 @@ form {
 .textoVermelho {
   color: var(--cornellRed);
   /*RGB: 184, 20, 20*/
+}
 
-  /*Alteraçõea Léia*/
+  /*Alterações Léia*/
 
-  #stretchingName {
+.modal-logo img{
+  position: fixed;
+  top: 20px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px; /* Adiciona uma pequena margem inferior */
+}  
 
-  }
-  #stretchingEquipment {
+.modal-image-stretching img {
+  width: 350px;
+  margin-top: 30px; 
+}
 
-  }
-  #stretchingMuscle {
-
-  }
-  #stretchingInstructions{
-
-  }
+#stretchingText {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px; /* Borda arredondada */
+  margin-bottom: 50px; /* Distância da div abaixo */
+  padding: 10px; /* Adiciona um preenchimento interno para melhorar a aparência */
 }
