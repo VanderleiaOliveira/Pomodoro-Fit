@@ -25,6 +25,19 @@ function hideStretchingModal() {
   modalStretchingBg.classList.remove('showModal');
 }
 
+function showStretchingAllDoneModal() {
+  const modalStretchingAllDoneBg = document.getElementById(
+    'modal-stretching-all-done'
+  );
+  modalStretchingAllDoneBg.classList.add('showModal');
+}
+//showStretchingAllDoneModal();
+// function hideStretchingModal() {
+//   const modalStretchingAllDoneBg = document.getElementById(
+//     'modal-stretching-all-done'
+//   );
+//   modalStretchingAllDoneBg.classList.remove('showModal');
+// }// para inicializar o sistema
 // para inicializar o sistema
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -306,7 +319,7 @@ async function showStretching() {
   // Atualiza o local que será exibido o alongamento e a imagem
   if (stretchingToShow) {
     document.getElementById('stretchingName').textContent =
-       stretchingToShow.name;
+      stretchingToShow.name;
     document.getElementById('stretchingEquipment').textContent =
       'Equipamento:\n' + stretchingToShow.equipment;
     document.getElementById('stretchingMuscle').textContent =

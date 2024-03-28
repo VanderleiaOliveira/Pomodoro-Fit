@@ -7,7 +7,9 @@
   <title>fitPomodoro</title>
   <link rel="stylesheet" href="./assets/css/vs01.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
   <link rel="stylesheet" href="assets/css/leia.css">
+  <link rel="stylesheet" href="assets/css/all-done.css">
 </head>
 
 <body id="body-bg" class="change-background fundoVermelho">
@@ -103,8 +105,8 @@
   <div id="modal-stretching" class="showModal change-background fundoVerde">
     <div class="modal">
       <div class="modal-content">
-        <div class="modal-logo" id="logoModalAlongamento"><img src="/assets/img/logo.png" alt="logo"></div>
-        <div class="modal-stretching-content" id="modalContent">
+        <div class="modal-stretching-logo"><img src="/assets/img/logo.png" alt="logo"></div>
+        <div class="modal-stretching-content">
           <div class="modal-image-stretching" id="stretchingImage">
           </div>
           <div class="pomodoro-timer" id="pauseCountDown"> 05:00</div>
@@ -123,6 +125,35 @@
     </div>
   </div>
   <!-- FIM MODAL DE Alongamento -->
+
+
+  <!-- INICIO MODAL DE CONCLUSÃO DE TODOS ALONGAMENTOS -->
+  <div id="modal-stretching-all-done" class="change-background fundoVerde">
+    <div class="modal">
+      <div class="modal-content-all-done">
+
+        <div class="modal-stretching-all-done-content">
+          <div class="modal-screen-congratulation">
+            <div class="modal-image-congratulation"><img src="/assets/img/congratulation.png"></div>
+            <div class="modal-text-congratulation">Avançado Concluído</div>
+          </div>
+          <div class="modal-screen-logo-buttons">
+            <div class="modal-logo-all-done">
+              <img src="/assets/img/logo.png" alt="logo">
+            </div>
+            <div>
+              <button id="btn-end-pause" class="change-text-color textoVermelho" type="button"
+                onclick="stretchingDone()">FINALIZAR O ALONGAMENTO</button>
+              <button id="btn-end-pause" class="change-text-color textoVermelho" type="button"
+                onclick="stretchingDone()">FINALIZAR O ALONGAMENTO</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL DE CONCLUSÃO DE TODOS ALONGAMENTOS -->
   <script type="text/javascript" src="./assets/js/vs01.js"></script>
 </body>
 

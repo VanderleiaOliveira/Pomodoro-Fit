@@ -1,17 +1,18 @@
 /*Alterações Léia*/
 
-.modal-logo img{
-  width: 250px;
+.modal-stretching-logo img {
   position: fixed;
-  top: 20px; 
+  top: 20px;
+  /* Ajuste conforme necessário */
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 20px; 
-}  
+  margin-bottom: 20px;
+  /* Adiciona uma pequena margem inferior */
+}
 
 .modal-image-stretching img {
   width: 350px;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 #stretchingText {
@@ -21,8 +22,8 @@
   color: var(--bone);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   padding: 10px;
   display: inline-block;
-  
+
 }
