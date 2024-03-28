@@ -299,6 +299,7 @@ form {
   /*Alterações Léia*/
 
 .modal-logo img{
+  width: 250px;
   position: fixed;
   top: 20px; /* Ajuste conforme necessário */
   left: 50%;
@@ -312,8 +313,14 @@ form {
 }
 
 #stretchingText {
-  background-color: rgba(255, 255, 255, 0.3);
+  font-family: poppins;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--bone);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px; /* Borda arredondada */
   margin-bottom: 50px; /* Distância da div abaixo */
   padding: 10px; /* Adiciona um preenchimento interno para melhorar a aparência */
+  display: inline-block;
+  
 }
