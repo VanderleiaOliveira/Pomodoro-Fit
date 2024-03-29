@@ -7,7 +7,14 @@
   <title>fitPomodoro</title>
   <link rel="stylesheet" href="./assets/css/vs01.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
   <link rel="stylesheet" href="assets/css/leia.css">
+  <link rel="stylesheet" href="assets/css/all-done.css">
+  <link rel="stylesheet" href="assets/css/modal-description.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
 <body id="body-bg" class="change-background fundoVermelho">
@@ -38,7 +45,7 @@
         <div class="menu-btn"><a href="#" class="btn change-background level fundoVerde" id="level"
             title="username você ainda tem X alongamentos para concluir este nível">32</a></div>
         <div class="menu-btn">
-          <a href="#" class="btn change-background fundoVerde" id="about">
+          <a href="#" class="btn change-background fundoVerde" id="about" onclick="showDescriptionModal()">
             <i class="fas fa-question icon" title="Sobre o pomodoro"></i>
           </a>
         </div>
@@ -102,10 +109,18 @@
   <!-- INICIO MODAL DE ALONGAMENTO -->
   <div id="modal-stretching" class="showModal change-background fundoVerde">
     <div class="modal">
+<<<<<<< HEAD
       <div class="modalAlongamento">
         <div class="modal-logo" id="logoModalAlongamento"><img src="/assets/img/logo.png" alt="logo"></div>
         <div class="modal-stretching-content" id="modalContent">
           <div class="modal-image-stretching" id="stretchingImage"></div>
+=======
+      <div class="modal-content">
+        <div class="modal-stretching-logo"><img src="/assets/img/logo.png" alt="logo"></div>
+        <div class="modal-stretching-content">
+          <div class="modal-image-stretching" id="stretchingImage">
+          </div>
+>>>>>>> 2fd30fd4411a1d1e1d62adfb2146d9e04c4496e3
           <div class="pomodoro-timer" id="pauseCountDown"> 05:00</div>
           <div class="modal-text-stretching" id="stretchingText">
             <div id="stretchingName"></div>
@@ -122,6 +137,90 @@
     </div>
   </div>
   <!-- FIM MODAL DE Alongamento -->
+
+
+  <!-- INICIO MODAL DE CONCLUSÃO DE TODOS ALONGAMENTOS -->
+  <div id="modal-stretching-all-done" class="change-background fundoVerde">
+    <div class="modal">
+      <div class="modal-content-all-done">
+        <div class="modal-stretching-all-done-content">
+          <div class="modal-screen-logo-buttons">
+            <div class="modal-logo-all-done">
+              <img src="/assets/img/logo.png" alt="logo">
+            </div>
+            <div class="modal-buttons-all-done">
+              <button id="choose-difficulty" class="change-background" type="button">QUERO OUTRA
+                DIFICULDADE</button>
+              <button id="restart-level" class="change-background" type="button">QUERO
+                FICAR NESSE
+                NÍVEL</button>
+            </div>
+          </div>
+          <div class="modal-screen-congratulation">
+            <div class="modal-image-congratulation"><img src="/assets/img/congratulation.png"></div>
+            <div class="modal-text-congratulation">Avançado Concluído</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIM MODAL DE CONCLUSÃO DE TODOS ALONGAMENTOS -->
+
+  <!-- INICIO MODAL DE DESCRIÇÃO -->
+  <div id="modal-description">
+    <div class="modal">
+      <div class="description-container">
+        <a href="#" class="btn fa-solid fa-xmark" onclick="hideDescriptionModal()" id="exit-icon"></a>
+        <div class="text">
+          <div class="about">
+            <h1>O que é o FitPomodoro?</h1>
+            <span>O FitPomodoro é mais do que um simples temporizador Pomodoro - é uma ferramenta
+              personalizável
+              que integra
+              exercícios de alongamento durante os intervalos. Com o objetivo de promover equilíbrio entre
+              produtividade e
+              bem-estar físico, o FitPomodoro ajuda você a manter o foco e a eficiência, enquanto
+              incorpora o
+              hábito saudável
+              de se alongar na sua rotina diária. Inspirado na Técnica Pomodoro, este site é projetado
+              para
+              otimizar sua
+              produtividade e promover um estilo de vida saudável.</span>
+
+            <h1>O que é a Técnica Pomodoro?</h1>
+            <span>A Técnica Pomodoro, criada por Francesco Cirillo, é uma estratégia de gerenciamento de
+              tempo
+              projetada para
+              otimizar a produtividade no ambiente de trabalho ou acadêmico. A técnica utiliza um
+              cronômetro
+              para segmentar
+              tarefas em 25 minutos de foco, intercalados por breves intervalos de 5 minutos de descanso.
+              Cada
+              período é
+              conhecido como “pomodoro”, que é a palavra italiana para “tomate”, uma homenagem ao formato
+              do
+              cronômetro de
+              cozinha que inspirou essa técnica.</span>
+          </div>
+          <div class="howToUse">
+            <h2>Como usar o FitPomodoro?</h2>
+            <ol>
+              <li>Defina a duração do cronômetro</li>
+              <li>Defina a dificuldade do exercício de alongamento</li>
+              <li>Inicie o cronômetro e concentre-se na tarefa a ser realizada</li>
+              <li> Após concluir o pomodoro, faça uma pausa breve de 5 minutos</li>
+              <li>Realize o exercício de alongamento indicado na tela</li>
+              <li>Depois de 4 pomodoros, faça uma pausa longa de 15 minutos</li>
+            </ol>
+            <img class="logo2" src="/assets/img/logo2.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODAL DE DESCRIÇÃO -->
+
   <script type="text/javascript" src="./assets/js/vs01.js"></script>
 </body>
 

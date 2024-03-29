@@ -1,0 +1,82 @@
+.modal-content-all-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.modal-stretching-all-done-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.modal-screen-congratulation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+  width: 600px;
+  border-radius: 20px;
+
+}
+
+.modal-screen-congratulation img {
+
+  filter: drop-shadow(3px 4px 8px rgba(0, 0, 0, 0.5));
+
+}
+
+
+.modal-screen-logo-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+
+}
+
+.modal-logo-all-done {
+  height: auto;
+}
+
+.modal-buttons-all-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 430px;
+}
+
+.modal-buttons-all-done button {
+  border-style: solid;
+  outline: none;
+  border-color: var(--bone);
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 16px;
+  font-family: poppins;
+  color: var(--bone);
+  width: 300px;
+  height: 45px;
+  margin: 15px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.modal-image-congratulation img {
+  width: 400px;
+}
+
+.modal-text-congratulation {
+  font-family: prata;
+  font-size: 40px;
+  color: var(--bone);
+  margin-bottom: 35px;
+}

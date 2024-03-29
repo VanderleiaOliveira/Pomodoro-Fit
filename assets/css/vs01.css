@@ -10,7 +10,7 @@
 :root {
   --blackJack: #101419;
   --bone: #ece3d5;
-  --cornellRed: #851414;
+  --cornellRed: #851A1A;
   --delftBlue: #454372;
   --shamrockGreen: #25681D;
 }
@@ -26,7 +26,6 @@ body {
 }
 
 /*CSS relativo a modal*/
-
 .showModal {
   display: flex;
   position: fixed;
@@ -46,21 +45,15 @@ body {
 .showModal .modal {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   margin: auto;
   padding: 20px;
   border-radius: 5px;
   z-index: 1001;
 }
-
-/* .modal-content {
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 500px;
-  margin: auto;
-  z-index: 1002;
-} */
-
 
 /*alterações Jaque*/
 
