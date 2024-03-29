@@ -32,12 +32,12 @@ function showStretchingAllDoneModal() {
   modalStretchingAllDoneBg.classList.add('showModal');
 }
 //showStretchingAllDoneModal();
-// function hideStretchingModal() {
-//   const modalStretchingAllDoneBg = document.getElementById(
-//     'modal-stretching-all-done'
-//   );
-//   modalStretchingAllDoneBg.classList.remove('showModal');
-// }// para inicializar o sistema
+function hideStretchingAllDoneModal() {
+  const modalStretchingAllDoneBg = document.getElementById(
+    'modal-stretching-all-done'
+  );
+  modalStretchingAllDoneBg.classList.remove('showModal');
+}
 // para inicializar o sistema
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -165,31 +165,31 @@ function changeTextColorByDifficultyInConfigButton() {
 
 // parte da gamificação do pomodoro:
 async function updateLevelProgress() {
-  const username = localStorage.getItem('username'); // Obtém o nome do usuário do localStorage
+  const usernameInput = document.getElementById('username'); // Obtém o elemento input do nome do usuário
+  const username = usernameInput ? usernameInput.value : null; // Obtém o valor do input, se disponível
   const difficulty = localStorage.getItem('difficulty');
-  const stretchings = await loadStretchings(); // Assumindo que essa função retorna todos os alongamentos disponíveis
-  const previousStretchings = JSON.parse(
-    localStorage.getItem('previousStretchings') || '[]'
-  );
+  let key = `previous${
+    difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
+  }Stretchings`;
+
+  const previousStretchings = JSON.parse(localStorage.getItem(key) || '[]');
+  const stretchings = await loadStretchings();
 
   const totalForDifficulty = stretchings.filter(
     (stretch) => stretch.difficulty === difficulty
   ).length;
   const remaining = totalForDifficulty - previousStretchings.length;
 
-  // Atualiza o texto do link com o número de alongamentos restantes
   document.getElementById('level').innerText = `${remaining}`;
 
   // Atualiza o atributo title do link
   const levelLink = document.getElementById('level');
   if (username) {
-    // Verifica se o nome do usuário existe antes de tentar usar
     levelLink.setAttribute(
       'title',
       `${username}, você ainda tem ${remaining} alongamentos para concluir este nível`
     );
   } else {
-    // Caso o nome do usuário não esteja disponível, pode definir um texto padrão
     levelLink.setAttribute(
       'title',
       `Você ainda tem ${remaining} alongamentos para concluir este nível`
@@ -299,15 +299,22 @@ async function loadStretchings() {
 async function showStretching() {
   const difficulty = localStorage.getItem('difficulty');
   const stretchings = await loadStretchings();
-  const previousStretchings = JSON.parse(
-    localStorage.getItem('previousStretchings') || '[]'
+
+  // Constrói a chave correta baseada na dificuldade
+  let key = `previous${
+    difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
+  }Stretchings`;
+
+  // Recupera os alongamentos concluídos para a dificuldade especificada
+  const previousStretchingsForDifficulty = JSON.parse(
+    localStorage.getItem(key) || '[]'
   );
 
   // Filtra os alongamentos pela dificuldade e que não foram mostrados recentemente
   const availableStretchings = stretchings.filter(
     (stretching) =>
       stretching.difficulty === difficulty &&
-      !previousStretchings.includes(stretching.id)
+      !previousStretchingsForDifficulty.includes(stretching.id)
   );
 
   // Seleciona um alongamento aleatoriamente
@@ -316,16 +323,15 @@ async function showStretching() {
       Math.floor(Math.random() * availableStretchings.length)
     ];
 
-  // Atualiza o local que será exibido o alongamento e a imagem
   if (stretchingToShow) {
     document.getElementById('stretchingName').textContent =
       stretchingToShow.name;
     document.getElementById('stretchingEquipment').textContent =
-      'Equipamento:\n' + stretchingToShow.equipment;
+      stretchingToShow.equipment;
     document.getElementById('stretchingMuscle').textContent =
-      'Músculo:\n' + stretchingToShow.muscle;
+      stretchingToShow.muscle;
     document.getElementById('stretchingInstructions').textContent =
-      'Instruções:\n' + stretchingToShow.instructions;
+      stretchingToShow.instructions;
 
     // Determina a imagem com base na dificuldade
     let imageUrl;
@@ -347,13 +353,18 @@ async function showStretching() {
     const imageElement = document.getElementById('stretchingImage');
     imageElement.innerHTML = `<img src="${imageUrl}">`;
 
-    // Salva o ID do alongamento mostrado para não repetir
-    previousStretchings.push(stretchingToShow.id);
-    localStorage.setItem(
-      'previousStretchings',
-      JSON.stringify(previousStretchings)
-    );
+    // Aqui deve salvar o ID do alongamento mostrado para a lista correta baseada na dificuldade
+    saveCompletedStretching(stretchingToShow.id, difficulty);
   }
+}
+
+function saveCompletedStretching(stretchingId, difficulty) {
+  let key = `previous${
+    difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
+  }Stretchings`;
+  let previousStretchings = JSON.parse(localStorage.getItem(key) || '[]');
+  previousStretchings.push(stretchingId);
+  localStorage.setItem(key, JSON.stringify(previousStretchings));
 }
 
 function stretchingDone() {
