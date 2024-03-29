@@ -31,7 +31,7 @@ function showStretchingAllDoneModal() {
   );
   modalStretchingAllDoneBg.classList.add('showModal');
 }
-//showStretchingAllDoneModal();
+showStretchingAllDoneModal();
 function hideStretchingAllDoneModal() {
   const modalStretchingAllDoneBg = document.getElementById(
     'modal-stretching-all-done'
