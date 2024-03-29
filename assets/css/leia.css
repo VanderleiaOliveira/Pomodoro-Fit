@@ -1,5 +1,16 @@
 /*Alterações Léia*/
 
+.modalAlongamento {
+  gap: 70px;
+  max-width: 500px
+  ;
+  border: 1px solid var(--bone);
+  padding: 5px; 
+  border-radius: 20px; 
+
+  
+ 
+}
 .modal-logo img{
   width: 250px;
   position: fixed;
@@ -9,20 +20,28 @@
   margin-bottom: 20px; 
 }  
 
-.modal-image-stretching img {
-  width: 350px;
+ .modal-image-stretching img {
+  width: 450px;
   margin-top: 30px; 
+  display: inline-block; /* Adicionando display inline-block */
 }
 
 #stretchingText {
+  width: 80%;
   font-family: poppins;
   font-size: 18px;
   letter-spacing: 1px;
   color: var(--bone);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   margin-bottom: 50px; 
   padding: 10px;
   display: inline-block;
+  display: inline-block; /* Adicionando display inline-block */
+  vertical-align: top; /* Alinhamento vertical ao topo */
   
 }
+
+
+
+
