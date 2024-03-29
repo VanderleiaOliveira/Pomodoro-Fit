@@ -31,12 +31,22 @@ function showStretchingAllDoneModal() {
   );
   modalStretchingAllDoneBg.classList.add('showModal');
 }
-showStretchingAllDoneModal();
+
 function hideStretchingAllDoneModal() {
   const modalStretchingAllDoneBg = document.getElementById(
     'modal-stretching-all-done'
   );
   modalStretchingAllDoneBg.classList.remove('showModal');
+}
+
+function showDescriptionModal() {
+  const modalDescription = document.getElementById('modal-description');
+  modalDescription.classList.add('showModal');
+}
+
+function hideDescriptionModal() {
+  const modalDescription = document.getElementById('modal-description');
+  modalDescription.classList.remove('showModal');
 }
 // para inicializar o sistema
 
