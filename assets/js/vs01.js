@@ -179,7 +179,10 @@ async function updateLevelProgress() {
     (stretch) => stretch.difficulty === difficulty
   ).length;
   const remaining = totalForDifficulty - previousStretchings.length;
-
+  // Exibe o modal de parabenização/gameficação se não restarem mais alongamentos no nível de dificuldade
+  if (remaining <= 0) {
+    showStretchingAllDoneModal();
+  }
   document.getElementById('level').innerText = `${remaining}`;
 
   // Atualiza o atributo title do link
@@ -196,6 +199,23 @@ async function updateLevelProgress() {
     );
   }
 }
+// Exibe o modal de configuração do Pomodoro para escolher outro nível de dificuldade
+document
+  .getElementById('choose-difficulty')
+  .addEventListener('click', function () {
+    hideStretchingAllDoneModal();
+    showModal();
+  });
+// Esvazia a lista de alongamentos completados para a dificuldade atual e atualiza a exibição de quantos alongamentos faltam
+document.getElementById('restart-level').addEventListener('click', function () {
+  hideStretchingAllDoneModal();
+  const difficulty = localStorage.getItem('difficulty');
+  let key = `previous${
+    difficulty.charAt(0).toUpperCase() + difficulty.slice(1)
+  }Stretchings`;
+  localStorage.setItem(key, '[]');
+  updateLevelProgress();
+});
 
 let countdownInterval;
 let timeLeftInSeconds;
