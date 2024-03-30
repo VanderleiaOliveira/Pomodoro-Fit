@@ -26,9 +26,9 @@ body {
 /* CSS MODAL DE DESCRIÇÃO */
 
 .logo {
-    width: 380px;
-    margin-top: 140px;
-    margin-left: 170px;
+    width: 330px;
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 #exit-icon {
@@ -54,38 +54,17 @@ body {
     font-family: poppins;
 }
 
-.text {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-    gap: 90px;
-}
-
 .about {
-    width: 500px;
+    width: 750px;
+    margin-bottom: 55px;
 }
 
-.howToUse {
-    margin-top: 150px;
-    width: 610px;
-    border: solid;
-    color: var(--cornellRed);
-    border-width: 1.5px;
-    border-radius: 20px;
-    padding: 20px;
-}
-
-h1, h2 {
+h1 {
     color: var(--cornellRed);
     margin-top: 55px;
     margin-bottom: 8px;
     font-size: 25px;
     font-family: prata;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-h2 {
-    margin-top: 20px;
 }
 
 span,
@@ -96,4 +75,13 @@ li {
 
 li {
     margin-left: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(171, 168, 168);
+
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cornellRed);
 }
