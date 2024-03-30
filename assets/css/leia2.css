@@ -1,0 +1,64 @@
+/*Alterações Léia*/
+
+<<<<<<< HEAD
+.modalAlongamento {
+  gap: 70px;
+  max-width: 500px
+  ;
+  border: 1px solid var(--bone);
+  padding: 5px; 
+  border-radius: 20px; 
+
+  
+ 
+}
+.modal-logo img{
+  width: 250px;
+=======
+.modal-stretching-logo img {
+>>>>>>> 2fd30fd4411a1d1e1d62adfb2146d9e04c4496e3
+  position: fixed;
+  top: 20px;
+  /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  /* Adiciona uma pequena margem inferior */
+}
+
+<<<<<<< HEAD
+ .modal-image-stretching img {
+  width: 450px;
+  margin-top: 30px; 
+  display: inline-block; /* Adicionando display inline-block */
+=======
+.modal-image-stretching img {
+  width: 350px;
+  margin-top: 30px;
+>>>>>>> 2fd30fd4411a1d1e1d62adfb2146d9e04c4496e3
+}
+
+#stretchingText {
+  width: 80%;
+  font-family: poppins;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: var(--bone);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  display: inline-block;
+<<<<<<< HEAD
+  display: inline-block; /* Adicionando display inline-block */
+  vertical-align: top; /* Alinhamento vertical ao topo */
+  
+}
+
+
+
+
+=======
+
+}
+>>>>>>> 2fd30fd4411a1d1e1d62adfb2146d9e04c4496e3
