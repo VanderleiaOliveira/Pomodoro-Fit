@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./assets/css/vs01.css">
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
 
-  <link rel="stylesheet" href="assets/css/leia.css">
+  <link rel="stylesheet" href="assets/css/jaque.css">
+  <!-- <link rel="stylesheet" href="assets/css/leia.css"> -->
   <link rel="stylesheet" href="assets/css/all-done.css">
   <link rel="stylesheet" href="assets/css/modal-description.css">
 
@@ -46,7 +47,7 @@
             title="username você ainda tem X alongamentos para concluir este nível">32</a></div>
         <div class="menu-btn">
           <a href="#" class="btn change-background fundoVerde" id="about" onclick="showDescriptionModal()">
-            <i class="fas fa-question icon" title="Sobre o pomodoro"></i>
+            <i class="fas fa-question icon" title="Sobre o FitPomodoro"></i>
           </a>
         </div>
       </div>
@@ -110,26 +111,27 @@
   <div id="modal-stretching" class="change-background fundoVerde">
     <div class="modal">
       <div class="modal-content">
-        <div class="modal-stretching-logo"><img src="/assets/img/logo.png" alt="logo"></div>
+        <div class="modal-stretching-logo">
+          <img src="/assets/img/logo.png" alt="logo" width="300">
+        </div>
         <div class="modal-stretching-content">
-          <div class="modal-image-stretching" id="stretchingImage">
+          <div class="modal-image-stretching" id="stretchingImage"></div>
+          <div>
+            <div class="pomodoro-timer" id="pauseCountDown"> 05:00</div>
+            <button id="btn-end-pause" class="change-text-color textoVermelho" type="button"
+              onclick="stretchingDone()">FINALIZAR ALONGAMENTO</button>
           </div>
-          <div class="pomodoro-timer" id="pauseCountDown"> 05:00</div>
           <div class="modal-text-stretching" id="stretchingText">
-            <div id="stretchingName"></div>
+            <div id="stretchingName"></span></div></br>
             <div id="stretchingEquipment"></div>
             <div id="stretchingMuscle"></div>
             <div id="stretchingInstructions"></div>
-          </div>
-          <div>
-            <button id="btn-end-pause" class="change-text-color textoVermelho" type="button"
-              onclick="stretchingDone()">FINALIZAR O ALONGAMENTO</button>
-          </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- FIM MODAL DE Alongamento -->
+  <!-- FIM MODAL DE ALONGAMENTO -->
 
 
   <!-- INICIO MODAL DE CONCLUSÃO DE TODOS ALONGAMENTOS -->

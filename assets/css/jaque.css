@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Prata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*após usar https://coolors.co/  para gerar uma paleta de cores*/
+:root {
+    --blackJack: #101419;
+    --bone: #ece3d5;
+    --cornellRed: #851A1A;
+    --delftBlue: #454372;
+    --shamrockGreen: #25681D;
+}
+
+.modal-stretching-logo {
+    position: absolute;
+    margin-top: -490px;
+    margin-left: 960px;
+}
+
+.modal-stretching-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-right: 150px;
+}
+
+#stretchingImage img {
+    width: 550px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+#pauseCountDown {
+    width: 150px;
+    height: 70px;
+    border: solid;
+    border-radius: 5px;
+    box-shadow:  3px 3px 4px rgba(0, 0, 0, 0.15);
+    color: var(--bone);
+    font-family: prata;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+}
+
+#btn-end-pause {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: .5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+#stretchingText {
+    width: 500px;
+    font-family: poppins;
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: var(--bone);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--bone);
+    margin-top: 50px;
+}
